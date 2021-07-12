@@ -1,0 +1,125 @@
+.Menu{
+    width: 25vw;
+    margin: 1.5vw 0;
+    position: relative;
+    font-family: 'Redonda';
+    font-weight: 100;
+    border-right: 1px $Black solid;
+    padding: 0 2vw;
+    .BxLogos{
+        display: flex;
+        .Logo{
+            width: 13%;
+        }
+        .LongLogo{
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+            width: 30%;
+        }
+    }
+    .About{
+        margin: 7vw 5vw 0 0;
+        color: $Black;
+        a{
+            font-size: 2.5vw;
+            font-weight: 700;
+            color: $Black;
+        }
+        p{
+            font-size: 1vw;
+            margin: 0;
+            margin-top: 0.5vw;
+            padding-right: 1vw;
+        }
+    }
+    .Links{
+        list-style: none;
+        margin-top: 1vw;
+        span{
+            font-size: 1vw;
+            color: $Black;
+        }
+        .link{
+            font-style: italic;
+            text-decoration: underline;
+            margin: 0.8vw 0 0 0;
+            a{
+                font-size: 1vw;
+                color: $Orange;
+            }
+            
+        }
+    }
+    h3{
+        position: absolute;
+        bottom: 2vw;
+        left: 1.5vw;
+        font-size: 0.9vw;
+        font-weight: 700;
+        color: $Black;
+        text-transform: uppercase;
+    }
+    .theme-switch {
+        width: 4.5vw;
+        height: 2vw;
+        border: $Black 2px solid;
+        border-radius: 50px;
+        position: absolute;
+        bottom: 0;
+        left: 2vw;
+        .switch {
+        background: $Black;
+        width: 1.35vw;
+        height: 1.35vw;
+        border-radius: 100%;
+        position: absolute;
+        top: 0.2vw;
+        left: 0.2vw;
+        transition: 0.5s all ease;
+        }
+    }
+}
+.light-theme {
+    background: $Black;
+    .Menu{
+        border-right: 1px $White solid;
+        .BxLogos{
+            .Logo{
+                svg{
+                    path{
+                        fill: $White;
+                    }
+                }
+            }
+            .LongLogo{
+                display: flex;
+                align-items: center;
+                margin-left: auto;
+                width: 30%;
+                svg{
+                    fill: $White;
+                }
+            }
+        }
+        .About{
+            color: $White;
+            a{
+                color: $White;
+            }
+        }
+        .Links{
+            span{
+                color: $White;
+            }
+        }
+        h3{ color: $White; }
+        .theme-switch {
+            border: $White 2px solid;
+            .switch {  
+                background: $White;
+                transform: translateX(2.4vw);
+            }
+        }
+    }
+}

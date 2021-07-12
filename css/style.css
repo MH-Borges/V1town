@@ -1,0 +1,248 @@
+@font-face {
+  font-family: "Redonda";
+  font-weight: 100;
+  src: url(../../font/REDONDA-LIGHT.OTF);
+}
+
+@font-face {
+  font-family: "Redonda";
+  font-weight: 100;
+  font-style: italic;
+  src: url(../../font/REDONDA-LIGHTITALIC.OTF);
+}
+
+@font-face {
+  font-family: "Redonda";
+  font-weight: 300;
+  src: url(../../font/REDONDA-REGULAR.OTF);
+}
+
+@font-face {
+  font-family: "Redonda";
+  font-weight: 300;
+  font-style: italic;
+  src: url(../../font/REDONDA-ITALIC.OTF);
+}
+
+@font-face {
+  font-family: "Redonda";
+  font-weight: 500;
+  src: url(../../font/REDONDA-BOLD.OTF);
+}
+
+@font-face {
+  font-family: "Redonda";
+  font-weight: 500;
+  font-style: italic;
+  src: url(../../font/REDONDA-BOLDITALIC.OTF);
+}
+
+@font-face {
+  font-family: "Redonda";
+  font-weight: 700;
+  src: url(../../font/REDONDA-EXTRABOLD.OTF);
+}
+
+@font-face {
+  font-family: "Redonda";
+  font-weight: 700;
+  font-style: italic;
+  src: url(../../font/REDONDA-EXTRABOLDITALIC.OTF);
+}
+
+@font-face {
+  font-family: "Redonda";
+  font-weight: 900;
+  src: url(../../font/REDONDA-BLACK.OTF);
+}
+
+@font-face {
+  font-family: "Redonda";
+  font-weight: 900;
+  font-style: italic;
+  src: url(../../font/REDONDA-BLACKITALIC.OTF);
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+}
+
+body {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #FFFFFF;
+  height: 100vh;
+  width: 100vw;
+  /*overflow: hidden;*/
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+img, svg {
+  display: block;
+  width: 100%;
+}
+
+.Menu {
+  width: 25vw;
+  margin: 1.5vw 0;
+  position: relative;
+  font-family: 'Redonda';
+  font-weight: 100;
+  border-right: 1px #0C0C0C solid;
+  padding: 0 2vw;
+}
+
+.Menu .BxLogos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Menu .BxLogos .Logo {
+  width: 13%;
+}
+
+.Menu .BxLogos .LongLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  width: 30%;
+}
+
+.Menu .About {
+  margin: 7vw 5vw 0 0;
+  color: #0C0C0C;
+}
+
+.Menu .About a {
+  font-size: 2.5vw;
+  font-weight: 700;
+  color: #0C0C0C;
+}
+
+.Menu .About p {
+  font-size: 1vw;
+  margin: 0;
+  margin-top: 0.5vw;
+  padding-right: 1vw;
+}
+
+.Menu .Links {
+  list-style: none;
+  margin-top: 1vw;
+}
+
+.Menu .Links span {
+  font-size: 1vw;
+  color: #0C0C0C;
+}
+
+.Menu .Links .link {
+  font-style: italic;
+  text-decoration: underline;
+  margin: 0.8vw 0 0 0;
+}
+
+.Menu .Links .link a {
+  font-size: 1vw;
+  color: #FF6D00;
+}
+
+.Menu h3 {
+  position: absolute;
+  bottom: 2vw;
+  left: 1.5vw;
+  font-size: 0.9vw;
+  font-weight: 700;
+  color: #0C0C0C;
+  text-transform: uppercase;
+}
+
+.Menu .theme-switch {
+  width: 4.5vw;
+  height: 2vw;
+  border: #0C0C0C 2px solid;
+  border-radius: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 2vw;
+}
+
+.Menu .theme-switch .switch {
+  background: #0C0C0C;
+  width: 1.35vw;
+  height: 1.35vw;
+  border-radius: 100%;
+  position: absolute;
+  top: 0.2vw;
+  left: 0.2vw;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.light-theme {
+  background: #0C0C0C;
+}
+
+.light-theme .Menu {
+  border-right: 1px #FFFFFF solid;
+}
+
+.light-theme .Menu .BxLogos .Logo svg path {
+  fill: #FFFFFF;
+}
+
+.light-theme .Menu .BxLogos .LongLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
+  width: 30%;
+}
+
+.light-theme .Menu .BxLogos .LongLogo svg {
+  fill: #FFFFFF;
+}
+
+.light-theme .Menu .About {
+  color: #FFFFFF;
+}
+
+.light-theme .Menu .About a {
+  color: #FFFFFF;
+}
+
+.light-theme .Menu .Links span {
+  color: #FFFFFF;
+}
+
+.light-theme .Menu h3 {
+  color: #FFFFFF;
+}
+
+.light-theme .Menu .theme-switch {
+  border: #FFFFFF 2px solid;
+}
+
+.light-theme .Menu .theme-switch .switch {
+  background: #FFFFFF;
+  -webkit-transform: translateX(2.4vw);
+          transform: translateX(2.4vw);
+}
+/*# sourceMappingURL=style.css.map */
