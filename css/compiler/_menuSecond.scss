@@ -1,10 +1,12 @@
 #content{
+    margin-left: 25vw;
     width: 75vw;
     display: flex;
     position: relative;
     font-family: 'Redonda';
     .MenuInside{
         width: 20%;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -20,5 +22,11 @@
         .active{
             color: $Orange;
         }
+    }
+    .TabsBx{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2.5vw 3vw;
+        width: 80%;
     }
 }

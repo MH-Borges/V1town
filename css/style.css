@@ -81,7 +81,7 @@ body {
   background: #FFFFFF;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
@@ -93,12 +93,12 @@ img, svg {
 
 .Menu {
   width: 25vw;
-  margin: 1.5vw 0;
-  position: relative;
+  height: 100vh;
+  position: fixed;
   font-family: 'Redonda';
   font-weight: 100;
   border-right: 1px #0C0C0C solid;
-  padding: 0 2vw;
+  padding: 1.5vw 2vw;
 }
 
 .Menu .BxLogos {
@@ -109,6 +109,10 @@ img, svg {
 
 .Menu .BxLogos .Logo {
   width: 13%;
+}
+
+.Menu .BxLogos .Logo svg path {
+  fill: #0C0C0C;
 }
 
 .Menu .BxLogos .LongLogo {
@@ -163,7 +167,7 @@ img, svg {
 
 .Menu h3 {
   position: absolute;
-  bottom: 2vw;
+  bottom: 3vw;
   left: 1.5vw;
   font-size: 0.9vw;
   font-weight: 700;
@@ -177,7 +181,7 @@ img, svg {
   border: #0C0C0C 2px solid;
   border-radius: 50px;
   position: absolute;
-  bottom: 0;
+  bottom: 1vw;
   left: 2vw;
 }
 
@@ -194,6 +198,7 @@ img, svg {
 }
 
 #content {
+  margin-left: 25vw;
   width: 75vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -204,6 +209,7 @@ img, svg {
 
 #content .MenuInside {
   width: 20%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,6 +236,81 @@ img, svg {
 
 #content .MenuInside .active {
   color: #FF6D00;
+}
+
+#content .TabsBx {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2.5vw 3vw;
+  width: 80%;
+}
+
+#Design {
+  width: 100%;
+}
+
+#Design #BlockCarousel {
+  width: 100%;
+  height: 55vh;
+  border-radius: 2vw;
+  background: #0C0C0C;
+}
+
+#Design #BlockCarousel .carousel-indicators li {
+  width: 0.5vw;
+  height: 0.5vw;
+  border-radius: 50px;
+  margin: 0 0.3vw;
+  border: 1px solid #FFFFFF;
+}
+
+#Design #BlockCarousel .carousel-inner {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 2vw;
+}
+
+#Design #BlockCarousel a {
+  width: 2vw;
+  margin: 0 1vw;
+}
+
+#Design #BlockCarousel a span {
+  width: 1.5vw;
+}
+
+#Design #BlockCarousel a #rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#Design h2 {
+  text-transform: uppercase;
+  font-size: 1vw;
+  color: #0C0C0C;
+  margin: 1vw 1.5vw 3vw 1.5vw;
+  font-weight: 700;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #FFFFFF;
+}
+
+::-webkit-scrollbar {
+  width: 0.75vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0C0C0C;
 }
 
 .light-theme {
@@ -295,5 +376,9 @@ img, svg {
 
 .light-theme #content .MenuInside .active {
   color: #0584FF;
+}
+
+.light-theme #content #Design h2 {
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */
