@@ -1,0 +1,61 @@
+#Foto{
+    width: 100%;
+    position: relative;
+    .iconFts{
+        position: absolute;
+        bottom: 0;
+        left: -13vw;
+        width: 5vw;
+        height: 5vw;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        .iconsFT{
+            background: $Black;
+            width: 32.5%;
+            height: 49%;
+        }
+        .metade{
+            width: 49.5% !important;
+        }
+        .cem{
+            width: 98.5% !important;
+        }
+    }
+    .blockfts{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        h2{
+            color: $Black;
+            font-size: 1.5vw;
+            font-weight: 500;
+            width: 100%;
+            margin: 0 0 1vw -1vw;
+        }
+        .FotoBx{
+            width: 32.5%;
+            background: $Black;
+            border-radius: 1vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0.7vw;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 1vw;
+            }
+        }
+    }
+    .metade{
+        width: 49.5%;
+    }
+    .cem{
+        width: 98.5%;
+    }
+}

@@ -246,7 +246,7 @@ img, svg {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 2.5vw 3vw;
-  width: 80%;
+  width: 79%;
 }
 
 #Design {
@@ -311,6 +311,99 @@ img, svg {
   color: #0C0C0C;
   margin: 1vw 1.5vw 3vw 1.5vw;
   font-weight: 700;
+}
+
+#Foto {
+  width: 100%;
+  position: relative;
+}
+
+#Foto .iconFts {
+  position: absolute;
+  bottom: 0;
+  left: -13vw;
+  width: 5vw;
+  height: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#Foto .iconFts .iconsFT {
+  background: #0C0C0C;
+  width: 32.5%;
+  height: 49%;
+}
+
+#Foto .iconFts .metade {
+  width: 49.5% !important;
+}
+
+#Foto .iconFts .cem {
+  width: 98.5% !important;
+}
+
+#Foto .blockfts {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#Foto .blockfts h2 {
+  color: #0C0C0C;
+  font-size: 1.5vw;
+  font-weight: 500;
+  width: 100%;
+  margin: 0 0 1vw -1vw;
+}
+
+#Foto .blockfts .FotoBx {
+  width: 32.5%;
+  background: #0C0C0C;
+  border-radius: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0.7vw;
+}
+
+#Foto .blockfts .FotoBx img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1vw;
+}
+
+#Foto .metade {
+  width: 49.5%;
+}
+
+#Foto .cem {
+  width: 98.5%;
 }
 
 ::-webkit-scrollbar-track {
@@ -392,5 +485,17 @@ img, svg {
 
 .light-theme #content #Design h2 {
   color: #FFFFFF;
+}
+
+.light-theme #Foto .iconFts .iconsFT {
+  background: #FFFFFF;
+}
+
+.light-theme #Foto .blockfts h2 {
+  color: #FFFFFF;
+}
+
+.light-theme #Foto .blockfts .FotoBx {
+  background: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */

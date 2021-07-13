@@ -22,6 +22,7 @@ img,svg{
 @import 'compiler/menu';
 @import 'compiler/menuSecond';
 @import 'compiler/design';
+@import 'compiler/foto';
 
 ::-webkit-scrollbar-track{background-color: $White;}
 ::-webkit-scrollbar{width: 0.75vw;}
@@ -87,6 +88,22 @@ img,svg{
         #Design{
             h2{
                 color: $White;
+            }
+        }
+    }
+    #Foto{
+        .iconFts{
+            .iconsFT{
+                background: $White;
+            }
+        }
+        .blockfts{
+            h2{
+                color: $White;
+            }
+            .FotoBx{
+                background: $White;
+                
             }
         }
     }

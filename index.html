@@ -86,7 +86,7 @@
     <section id="content">
         <div class="nav nav-pills MenuInside">
             <a class="MenuSd active" data-toggle="pill" href="#Design" aria-selected="true">Design</a>
-            <a class="MenuSd" data-toggle="pill" href="#Foto" aria-selected="false">Fotografia</a>
+            <a class="MenuSd"  data-toggle="pill" href="#Foto" aria-selected="false">Fotografia</a>
             <a class="MenuSd" data-toggle="pill" href="#Tipogr" aria-selected="false">Tipografia</a>
             <a class="MenuSd" data-toggle="pill" href="#sketch" aria-selected="false">Sketch</a>
             <a class="MenuSd" data-toggle="pill" href="#contato" aria-selected="false">contato</a>
@@ -94,7 +94,6 @@
 
         <div class="tab-content TabsBx">
             <div class="tab-pane fade show active" id="Design">
-
                 <div class="carouselBx">
                     <div id="BlockCarousel" class="carousel slide belm" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -150,7 +149,6 @@
                     </div>
                     <h2>BELMONTH . 2021</h2>
                 </div>
-
                 <div class="carouselBx">
                     <div id="BlockCarousel" class="carousel slide FtcomAmor" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -178,10 +176,30 @@
                     </div>
                     <h2>Feitos com amor . 2020</h2>
                 </div>
-            
             </div>
 
-            <div class="tab-pane fade" id="Foto">teste 02</div>
+            <div class="tab-pane fade " id="Foto">
+                <a class="iconFts">
+                    <div class="iconsFT"></div>
+                    <div class="iconsFT"></div>
+                    <div class="iconsFT three"></div>
+                    <div class="iconsFT four"></div>
+                    <div class="iconsFT five"></div>
+                    <div class="iconsFT six"></div>
+                </a>
+                <div class="blockfts">
+                    <h2>1. Leonardo</h2>
+                    <div class="FotoBx">
+                        <img src="img/Leo/IMG_7178-16.jpg">
+                    </div>
+                    <div class="FotoBx">
+                        <img src="img/Leo/IMG_7182-20.jpg">
+                    </div>
+                    <div class="FotoBx">
+                        <img src="img/Leo/IMG_7194-29.jpg">
+                    </div>
+                </div>
+            </div>
             <div class="tab-pane fade" id="Tipogr">teste 03</div>
             <div class="tab-pane fade" id="sketch">teste 04</div>
             <div class="tab-pane fade" id="contato">teste 05</div>
@@ -201,6 +219,19 @@
                 DarkIn = '<span id="darkIn">Dark Mode<span>';  
                 $("#lightIn").remove();
                 $("#dark").append(DarkIn);
+            }
+        });
+        
+        $(".iconFts").on("click", () => {
+            $(".six").remove();
+            $(".five").remove();
+            $(".iconsFT").addClass("metade");
+
+            if ($(".iconsFT").attr === 'metade') {
+                $(".three").remove();
+                $(".four").remove();
+                $(".iconsFT").removeClass("metade");
+                $(".iconsFT").addClass("cem");
             }
         });
     </script>
