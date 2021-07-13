@@ -81,7 +81,7 @@ body {
   background: #FFFFFF;
   height: 100vh;
   width: 100vw;
-  /*overflow: hidden;*/
+  overflow: hidden;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
@@ -193,6 +193,45 @@ img, svg {
   transition: 0.5s all ease;
 }
 
+#content {
+  width: 75vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  font-family: 'Redonda';
+}
+
+#content .MenuInside {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#content .MenuInside .MenuSd {
+  color: #0C0C0C;
+  padding: 1.2vw;
+  font-size: 1vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#content .MenuInside .active {
+  color: #FF6D00;
+}
+
 .light-theme {
   background: #0C0C0C;
 }
@@ -244,5 +283,13 @@ img, svg {
   background: #FFFFFF;
   -webkit-transform: translateX(2.4vw);
           transform: translateX(2.4vw);
+}
+
+.light-theme #content .MenuInside .MenuSd {
+  color: #FFFFFF;
+}
+
+.light-theme #content .MenuInside .active {
+  color: #0584FF;
 }
 /*# sourceMappingURL=style.css.map */

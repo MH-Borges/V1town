@@ -12,7 +12,7 @@ body{
     background: $White;
     height: 100vh;
     width: 100vw;
-    /*overflow: hidden;*/
+    overflow: hidden;
     transition: 0.5s ease-in-out;
 }
 img,svg{
@@ -20,3 +20,58 @@ img,svg{
     width: 100%;
 }
 @import 'compiler/menu';
+@import 'compiler/menuSecond';
+
+.light-theme {
+    background: $Black;
+    .Menu{
+        border-right: 1px $White solid;
+        .BxLogos{
+            .Logo{
+                svg{
+                    path{
+                        fill: $White;
+                    }
+                }
+            }
+            .LongLogo{
+                display: flex;
+                align-items: center;
+                margin-left: auto;
+                width: 30%;
+                svg{
+                    fill: $White;
+                }
+            }
+        }
+        .About{
+            color: $White;
+            a{
+                color: $White;
+            }
+        }
+        .Links{
+            span{
+                color: $White;
+            }
+        }
+        h3{ color: $White; }
+        .theme-switch {
+            border: $White 2px solid;
+            .switch {  
+                background: $White;
+                transform: translateX(2.4vw);
+            }
+        }
+    }
+    #content{
+        .MenuInside{
+            .MenuSd{
+                color: $White;
+            }
+            .active{
+                color: $Blue;
+            }
+        }
+    }
+}
