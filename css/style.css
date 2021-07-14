@@ -66,13 +66,13 @@
 @font-face {
   font-family: "Abelha";
   font-weight: 500;
-  src: url(../font/3-abelhagorda.otf);
+  src: url(../font/abelhagorda.otf);
 }
 
 @font-face {
   font-family: "Abelha";
   font-weight: 300;
-  src: url(../font/1-abelharegular.otf);
+  src: url(../font/abelharegular.otf);
 }
 
 *, *::after, *::before {
