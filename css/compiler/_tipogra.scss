@@ -1,7 +1,50 @@
 #Tipogr{
     width: 100%;
-    border: 5px solid yellowgreen;
     h2{
-        border: none !important;
+        font-weight: 500;
+        outline: none;
+        color: $Black;
+        font-size: 4vw;
+        margin: 0;
+        font-family: 'Abelha';
+    }
+    .abelhalinks{
+        width: 100%;
+        font-family: 'Redonda';
+        ul{
+            display: flex;
+            list-style: none;
+            margin: -0.5vw 0 0 -0.5vw;
+            a{
+                color: $Black;
+                text-decoration: none;
+                padding: 0.5vw;
+                margin: 0 0.5vw 0 0;
+                font-size: 1vw;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .PosterBx{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        .Poster{
+            width: 48%;
+            height: 70vh;
+            background-color: $Black;
+            border-radius: 1vw;
+            margin: 1vw 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 1vw;
+            }
+        }
     }
 }
