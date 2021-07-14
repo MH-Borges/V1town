@@ -263,6 +263,7 @@ img, svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: fixed;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -296,6 +297,7 @@ img, svg {
       flex-wrap: wrap;
   padding: 2.5vw 3vw;
   width: 79%;
+  margin-left: 20%;
 }
 
 .content.actived {
@@ -373,9 +375,9 @@ img, svg {
 }
 
 #Foto .iconFts {
-  position: absolute;
-  top: 83vh;
-  left: -12vw;
+  position: fixed;
+  top: 85vh;
+  left: 33.5vw;
   width: 3.5vw;
   height: 3.5vw;
   display: -webkit-box;
@@ -393,16 +395,17 @@ img, svg {
 
 #Foto .iconFts .iconsFT {
   background: #0C0C0C;
-  width: 49.2%;
+  width: 32.3%;
   height: 48.5%;
 }
 
-#Foto .iconFts .triplo {
-  width: 32% !important;
+#Foto .iconFts .metade {
+  width: 49% !important;
 }
 
 #Foto .iconFts .cem {
-  width: 98.5% !important;
+  width: 100% !important;
+  height: 100%;
 }
 
 #Foto .blockfts {
@@ -471,6 +474,10 @@ img, svg {
 #Tipogr {
   width: 100%;
   border: 5px solid yellowgreen;
+}
+
+#Tipogr h2 {
+  border: none !important;
 }
 
 ::-webkit-scrollbar-track {

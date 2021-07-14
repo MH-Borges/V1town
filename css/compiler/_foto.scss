@@ -2,9 +2,9 @@
     width: 100%;
     position: relative;
     .iconFts{
-        position: absolute;
-        top: 83vh;
-        left: -12vw;
+        position: fixed;
+        top: 85vh;
+        left: 33.5vw;
         width: 3.5vw;
         height: 3.5vw;
         display: flex;
@@ -13,14 +13,15 @@
         justify-content: space-between;
         .iconsFT{
             background: $Black;
-            width: 49.2%;
+            width: 32.3%;
             height: 48.5%;
         }
-        .triplo{
-            width: 32% !important;
+        .metade{
+            width: 49% !important;
         }
         .cem{
-            width: 98.5% !important;
+            width: 100% !important;
+            height: 100%;
         }
     }
     .blockfts{

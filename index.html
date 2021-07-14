@@ -88,8 +88,8 @@
     <section class="content" >
         <div class="nav nav-pills MenuInside">
             <a class="MenuSd" data-toggle="pill" href="#Design" aria-selected="true">Design</a>
-            <a class="MenuSd"  data-toggle="pill" href="#Foto" aria-selected="false">Fotografia</a>
-            <a class="MenuSd active" data-toggle="pill" href="#Tipogr" aria-selected="false">Tipografia</a>
+            <a class="MenuSd active"  data-toggle="pill" href="#Foto" aria-selected="false">Fotografia</a>
+            <a class="MenuSd" data-toggle="pill" href="#Tipogr" aria-selected="false">Tipografia</a>
             <a class="MenuSd" data-toggle="pill" href="#sketch" aria-selected="false">Sketch</a>
             <a class="MenuSd" data-toggle="pill" href="#contato" aria-selected="false">contato</a>
         </div>
@@ -180,12 +180,14 @@
                 </div>
             </div>
 
-            <div class="tab-pane fade" id="Foto">
+            <div class="tab-pane fade show active" id="Foto">
                 <a class="iconFts">
                     <div class="iconsFT"></div>
-                    <div class="iconsFT"></div>
+                    <div class="iconsFT two"></div>
                     <div class="iconsFT three"></div>
                     <div class="iconsFT four"></div>
+                    <div class="iconsFT five"></div>
+                    <div class="iconsFT six"></div>
                 </a>
                 <div class="blockfts">
                     <h2>1. Leonardo</h2>
@@ -219,8 +221,8 @@
                 </div>
             </div>
 
-            <div class="tab-pane fade show active" id="Tipogr">
-
+            <div class="tab-pane fade " id="Tipogr">
+                <h2 contenteditable="">Abelha Gorda</h2>
             </div>
             <div class="tab-pane fade" id="sketch">teste 04</div>
             <div class="tab-pane fade" id="contato">teste 05</div>
@@ -251,29 +253,32 @@
         $(".iconFts").on("click", () => {
             var getClass = $('.iconsFT').attr('class');
             if (getClass === 'iconsFT') {
-                $(".three").remove();
-                $(".four").remove();
-                $(".iconsFT").addClass("cem");
+                $(".five").remove();
+                $(".six").remove();
+                $(".iconsFT").addClass("metade");
                 $(".FotoBx").addClass("metade");
                 $(".FotoBx").removeClass("none");
             }
+            if (getClass === 'iconsFT metade') {
+                $(".iconsFT").removeClass("metade");
+                $(".two").remove();
+                $(".three").remove();
+                $(".four").remove();
+                $(".iconsFT").addClass("cem");
+                $(".FotoBx").removeClass("metade");
+                $(".FotoBx").addClass("cem");
+            }
             if (getClass === 'iconsFT cem') {
                 $(".iconsFT").removeClass("cem");
+                two = '<div class="iconsFT two"></div>';
                 three = '<div class="iconsFT three"></div>';
                 four = '<div class="iconsFT four"></div>';
                 five = '<div class="iconsFT five"></div>';
                 six = '<div class="iconsFT six"></div>';
-                $(".iconFts").append(three, four, five, six);
-                $(".iconsFT").addClass("triplo");
-                $(".FotoBx").removeClass("metade");
-                $(".FotoBx").addClass("cem");
-            }
-            if (getClass === 'iconsFT triplo') {
-                $(".iconsFT").removeClass("triplo");
-                $(".five").remove();
-                $(".six").remove();
+                $(".iconFts").append(two, three, four, five, six);
                 $(".FotoBx").removeClass("cem");
                 $(".hide").addClass("none");
+                
             }
         });
     </script>

@@ -9,6 +9,7 @@
         width: 20%;
         height: 100vh;
         display: flex;
+        position: fixed;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -29,6 +30,7 @@
         flex-wrap: wrap;
         padding: 2.5vw 3vw;
         width: 79%;
+        margin-left: 20%;
     }
 }
 .content.actived{
