@@ -635,4 +635,12 @@ img, svg {
 .light-theme #Foto .blockfts .FotoBx {
   background: #FFFFFF;
 }
+
+.light-theme #Tipogr h2 {
+  color: #FFFFFF;
+}
+
+.light-theme #Tipogr .abelhalinks ul a {
+  color: #FFFFFF;
+}
 /*# sourceMappingURL=style.css.map */
