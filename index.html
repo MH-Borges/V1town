@@ -85,15 +85,15 @@
 
     <section id="content">
         <div class="nav nav-pills MenuInside">
-            <a class="MenuSd active" data-toggle="pill" href="#Design" aria-selected="true">Design</a>
-            <a class="MenuSd"  data-toggle="pill" href="#Foto" aria-selected="false">Fotografia</a>
+            <a class="MenuSd " data-toggle="pill" href="#Design" aria-selected="true">Design</a>
+            <a class="MenuSd active"  data-toggle="pill" href="#Foto" aria-selected="false">Fotografia</a>
             <a class="MenuSd" data-toggle="pill" href="#Tipogr" aria-selected="false">Tipografia</a>
             <a class="MenuSd" data-toggle="pill" href="#sketch" aria-selected="false">Sketch</a>
             <a class="MenuSd" data-toggle="pill" href="#contato" aria-selected="false">contato</a>
         </div>
 
         <div class="tab-content TabsBx">
-            <div class="tab-pane fade show active" id="Design">
+            <div class="tab-pane fade" id="Design">
                 <div class="carouselBx">
                     <div id="BlockCarousel" class="carousel slide belm" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -178,14 +178,12 @@
                 </div>
             </div>
 
-            <div class="tab-pane fade " id="Foto">
+            <div class="tab-pane fade show active" id="Foto">
                 <a class="iconFts">
                     <div class="iconsFT"></div>
                     <div class="iconsFT"></div>
                     <div class="iconsFT three"></div>
                     <div class="iconsFT four"></div>
-                    <div class="iconsFT five"></div>
-                    <div class="iconsFT six"></div>
                 </a>
                 <div class="blockfts">
                     <h2>1. Leonardo</h2>
@@ -197,6 +195,18 @@
                     </div>
                     <div class="FotoBx">
                         <img src="img/Leo/IMG_7194-29.jpg">
+                    </div>
+                </div>
+                <div class="blockfts">
+                    <h2>2. Matheus</h2>
+                    <div class="FotoBx">
+                        <img src="img/matheus/IMG-20181225-WA0022.jpg">
+                    </div>
+                    <div class="FotoBx">
+                        <img src="img/matheus/IMG-20181225-WA0023.jpg">
+                    </div>
+                    <div class="FotoBx">
+                        <img src="img/matheus/IMG-20181225-WA0063.jpg">
                     </div>
                 </div>
             </div>
@@ -223,15 +233,29 @@
         });
         
         $(".iconFts").on("click", () => {
-            $(".six").remove();
-            $(".five").remove();
-            $(".iconsFT").addClass("metade");
-
-            if ($(".iconsFT").attr === 'metade') {
+            var getClass = $('.iconsFT').attr('class');
+            if (getClass === 'iconsFT') {
                 $(".three").remove();
                 $(".four").remove();
-                $(".iconsFT").removeClass("metade");
                 $(".iconsFT").addClass("cem");
+                $(".FotoBx").addClass("metade");
+            }
+            if (getClass === 'iconsFT cem') {
+                $(".iconsFT").removeClass("cem");
+                three = '<div class="iconsFT three"></div>';
+                four = '<div class="iconsFT four"></div>';
+                five = '<div class="iconsFT five"></div>';
+                six = '<div class="iconsFT six"></div>';
+                $(".iconFts").append(three, four, five, six);
+                $(".iconsFT").addClass("triplo");
+                $(".FotoBx").removeClass("metade");
+                $(".FotoBx").addClass("cem");
+            }
+            if (getClass === 'iconsFT triplo') {
+                $(".iconsFT").removeClass("triplo");
+                $(".five").remove();
+                $(".six").remove();
+                $(".FotoBx").removeClass("cem");
             }
         });
     </script>
