@@ -7,9 +7,11 @@
     font-weight: 100;
     border-right: 1px $Black solid;
     padding: 1.5vw 2vw;
+    transition: 0.5s ease-in-out;
     .BxLogos{
         display: flex;
         .Logo{
+            transition: 0.5s ease-in-out;
             width: 13%;
             svg{
                 path{
@@ -17,7 +19,6 @@
                 }
             }
         }
-        
         .LongLogo{
             display: flex;
             align-items: center;
@@ -26,18 +27,20 @@
         }
     }
     .About{
-        margin: 7vw 5vw 0 0;
+        margin: 7vw 0 0 0;
         color: $Black;
         a{
             font-size: 2.5vw;
             font-weight: 700;
             color: $Black;
+            transition: 0.5s ease-in-out;
         }
         p{
             font-size: 1vw;
             margin: 0;
             margin-top: 0.5vw;
-            padding-right: 1vw;
+            padding-right: 3vw;
+            transition: 0.5s ease-in-out;
         }
     }
     .Links{
@@ -86,4 +89,18 @@
             transition: 0.5s all ease;
         }
     }
+}
+.Menu.actived{
+    width: 15vw;
+    .BxLogos{
+        display: flex;
+        .Logo{ width: 30%; }
+        .LongLogo{ display: none; }
+    }
+    .About{
+        margin: 6vw 0 0 0;
+        a{ font-size: 1.9vw; transition: 0.5s ease-in-out; }
+        p{ display: none; }
+    }
+    .Links{ span{ font-size: 1vw; padding-right: 0.5vw; transition: 0.5s ease-in-out; } }
 }

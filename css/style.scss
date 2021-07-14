@@ -23,6 +23,7 @@ img,svg{
 @import 'compiler/menuSecond';
 @import 'compiler/design';
 @import 'compiler/foto';
+@import 'compiler/tipogra';
 
 ::-webkit-scrollbar-track{background-color: $White;}
 ::-webkit-scrollbar{width: 0.75vw;}
@@ -32,40 +33,17 @@ img,svg{
     background: $Black;
     .Menu{
         border-right: 1px $White solid;
-        .BxLogos{
-            .Logo{
-                svg{
-                    path{
-                        fill: $White;
-                    }
-                }
-            }
-            .LongLogo{
-                display: flex;
-                align-items: center;
-                margin-left: auto;
-                width: 30%;
-                svg{
-                    fill: $White;
-                }
-            }
+        .BxLogos{ 
+            .Logo{ svg{ path{ fill: $White; } } }
+            .LongLogo{ svg{ fill: $White; } }
         }
         .About{
             color: $White;
-            a{
-                color: $White;
-            }
+            a{ color: $White; }
         }
         .Links{
-            span{
-                color: $White;
-            }
-            .link{
-                a{
-                    color: $Blue;
-                }
-                
-            }
+            span{ color: $White; }
+            .link{ a{ color: $Blue; } }
         }
         h3{ color: $White; }
         .theme-switch {
@@ -76,35 +54,15 @@ img,svg{
             }
         }
     }
-    #content{
+    .content{
         .MenuInside{
-            .MenuSd{
-                color: $White;
-            }
-            .active{
-                color: $Blue;
-            }
-        }
-        #Design{
-            h2{
-                color: $White;
-            }
+            .MenuSd{ color: $White; }
+            .active{ color: $Blue; }
         }
     }
-    #Foto{
-        .iconFts{
-            .iconsFT{
-                background: $White;
-            }
-        }
-        .blockfts{
-            h2{
-                color: $White;
-            }
-            .FotoBx{
-                background: $White;
-                
-            }
-        }
+    #Design{ h2{ color: $White; } }
+    #Foto{ 
+        .iconFts{ .iconsFT{ background: $White; } }
+        .blockfts{ h2{ color: $White; } .FotoBx{ background: $White; } }
     }
 }

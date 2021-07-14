@@ -100,6 +100,8 @@ img, svg {
   font-weight: 100;
   border-right: 1px #0C0C0C solid;
   padding: 1.5vw 2vw;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .Menu .BxLogos {
@@ -109,6 +111,8 @@ img, svg {
 }
 
 .Menu .BxLogos .Logo {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   width: 13%;
 }
 
@@ -128,7 +132,7 @@ img, svg {
 }
 
 .Menu .About {
-  margin: 7vw 5vw 0 0;
+  margin: 7vw 0 0 0;
   color: #0C0C0C;
 }
 
@@ -136,13 +140,17 @@ img, svg {
   font-size: 2.5vw;
   font-weight: 700;
   color: #0C0C0C;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .Menu .About p {
   font-size: 1vw;
   margin: 0;
   margin-top: 0.5vw;
-  padding-right: 1vw;
+  padding-right: 3vw;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .Menu .Links {
@@ -198,7 +206,46 @@ img, svg {
   transition: 0.5s all ease;
 }
 
-#content {
+.Menu.actived {
+  width: 15vw;
+}
+
+.Menu.actived .BxLogos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Menu.actived .BxLogos .Logo {
+  width: 30%;
+}
+
+.Menu.actived .BxLogos .LongLogo {
+  display: none;
+}
+
+.Menu.actived .About {
+  margin: 6vw 0 0 0;
+}
+
+.Menu.actived .About a {
+  font-size: 1.9vw;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.Menu.actived .About p {
+  display: none;
+}
+
+.Menu.actived .Links span {
+  font-size: 1vw;
+  padding-right: 0.5vw;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.content {
   margin-left: 25vw;
   width: 75vw;
   display: -webkit-box;
@@ -206,9 +253,11 @@ img, svg {
   display: flex;
   position: relative;
   font-family: 'Redonda';
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
-#content .MenuInside {
+.content .MenuInside {
   width: 20%;
   height: 100vh;
   display: -webkit-box;
@@ -226,7 +275,7 @@ img, svg {
           align-items: center;
 }
 
-#content .MenuInside .MenuSd {
+.content .MenuInside .MenuSd {
   color: #0C0C0C;
   padding: 1.2vw;
   font-size: 1vw;
@@ -235,11 +284,11 @@ img, svg {
   text-decoration: none;
 }
 
-#content .MenuInside .active {
+.content .MenuInside .active {
   color: #FF6D00;
 }
 
-#content .TabsBx {
+.content .TabsBx {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,6 +296,11 @@ img, svg {
       flex-wrap: wrap;
   padding: 2.5vw 3vw;
   width: 79%;
+}
+
+.content.actived {
+  margin-left: 15vw;
+  width: 85vw;
 }
 
 #Design {
@@ -344,7 +398,7 @@ img, svg {
 }
 
 #Foto .iconFts .triplo {
-  width: 32.5% !important;
+  width: 32% !important;
 }
 
 #Foto .iconFts .cem {
@@ -414,6 +468,11 @@ img, svg {
   height: auto;
 }
 
+#Tipogr {
+  width: 100%;
+  border: 5px solid yellowgreen;
+}
+
 ::-webkit-scrollbar-track {
   background-color: #FFFFFF;
 }
@@ -436,17 +495,6 @@ img, svg {
 
 .light-theme .Menu .BxLogos .Logo svg path {
   fill: #FFFFFF;
-}
-
-.light-theme .Menu .BxLogos .LongLogo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: auto;
-  width: 30%;
 }
 
 .light-theme .Menu .BxLogos .LongLogo svg {
@@ -483,15 +531,15 @@ img, svg {
           transform: translateX(2.4vw);
 }
 
-.light-theme #content .MenuInside .MenuSd {
+.light-theme .content .MenuInside .MenuSd {
   color: #FFFFFF;
 }
 
-.light-theme #content .MenuInside .active {
+.light-theme .content .MenuInside .active {
   color: #0584FF;
 }
 
-.light-theme #content #Design h2 {
+.light-theme #Design h2 {
   color: #FFFFFF;
 }
 

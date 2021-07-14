@@ -1,9 +1,10 @@
-#content{
+.content{
     margin-left: 25vw;
     width: 75vw;
     display: flex;
     position: relative;
     font-family: 'Redonda';
+    transition: 0.5s ease-in-out;
     .MenuInside{
         width: 20%;
         height: 100vh;
@@ -29,4 +30,8 @@
         padding: 2.5vw 3vw;
         width: 79%;
     }
+}
+.content.actived{
+    margin-left: 15vw;
+    width: 85vw;  
 }

@@ -42,9 +42,11 @@
 <body>     
     <nav class="Menu">
         <div class="BxLogos">
-            <div class="Logo">
-                <img src="img/logo.svg" onload="SVGInject(this)" />
-            </div>
+            <a id="activelogo">
+                <div class="Logo">
+                    <img src="img/logo.svg" onload="SVGInject(this)" />
+                </div>
+            </a>
             <div class="LongLogo">
                 <img src="img/v1town.svg" onload="SVGInject(this)" />
             </div> 
@@ -83,11 +85,11 @@
         </div>
     </nav>
 
-    <section id="content">
+    <section class="content" >
         <div class="nav nav-pills MenuInside">
-            <a class="MenuSd " data-toggle="pill" href="#Design" aria-selected="true">Design</a>
-            <a class="MenuSd active"  data-toggle="pill" href="#Foto" aria-selected="false">Fotografia</a>
-            <a class="MenuSd" data-toggle="pill" href="#Tipogr" aria-selected="false">Tipografia</a>
+            <a class="MenuSd" data-toggle="pill" href="#Design" aria-selected="true">Design</a>
+            <a class="MenuSd"  data-toggle="pill" href="#Foto" aria-selected="false">Fotografia</a>
+            <a class="MenuSd active" data-toggle="pill" href="#Tipogr" aria-selected="false">Tipografia</a>
             <a class="MenuSd" data-toggle="pill" href="#sketch" aria-selected="false">Sketch</a>
             <a class="MenuSd" data-toggle="pill" href="#contato" aria-selected="false">contato</a>
         </div>
@@ -178,7 +180,7 @@
                 </div>
             </div>
 
-            <div class="tab-pane fade show active" id="Foto">
+            <div class="tab-pane fade" id="Foto">
                 <a class="iconFts">
                     <div class="iconsFT"></div>
                     <div class="iconsFT"></div>
@@ -216,7 +218,10 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade" id="Tipogr">teste 03</div>
+
+            <div class="tab-pane fade show active" id="Tipogr">
+
+            </div>
             <div class="tab-pane fade" id="sketch">teste 04</div>
             <div class="tab-pane fade" id="contato">teste 05</div>
         </div>
@@ -236,6 +241,11 @@
                 $("#lightIn").remove();
                 $("#dark").append(DarkIn);
             }
+        });
+
+        $("#activelogo").on("click", () => {
+            $(".Menu").toggleClass("actived");
+            $(".content").toggleClass("actived");   
         });
         
         $(".iconFts").on("click", () => {
