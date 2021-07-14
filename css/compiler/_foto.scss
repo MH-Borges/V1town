@@ -3,17 +3,17 @@
     position: relative;
     .iconFts{
         position: absolute;
-        top: 80vh;
-        left: -12.5vw;
-        width: 4.5vw;
-        height: 4.5vw;
+        top: 83vh;
+        left: -12vw;
+        width: 3.5vw;
+        height: 3.5vw;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
         .iconsFT{
             background: $Black;
-            width: 49.4%;
+            width: 49.2%;
             height: 48.5%;
         }
         .triplo{
@@ -34,12 +34,14 @@
             font-size: 1.5vw;
             font-weight: 500;
             width: 100%;
-            margin: 0 0 1vw -1vw;
+            margin: 1vw 0 1vw -1vw;
         }
         .FotoBx{
             width: 32.5%;
+            height: 30vh;
             background: $Black;
             border-radius: 1vw;
+            margin: 0 0 2vw 0;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -51,12 +53,16 @@
                 border-radius: 1vw;
             }
         }
+        .none{
+            display: none;
+        }
         .metade{
             width: 49.5%;
+            height: 50vh;
         }
         .cem{
             width: 98.5%;
+            height: auto;
         }
     }
-    
 }

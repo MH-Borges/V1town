@@ -196,6 +196,9 @@
                     <div class="FotoBx">
                         <img src="img/Leo/IMG_7194-29.jpg">
                     </div>
+                    <div class="FotoBx hide none">
+                        <img src="img/Leo/IMG_7173-12.jpg">
+                    </div>
                 </div>
                 <div class="blockfts">
                     <h2>2. Matheus</h2>
@@ -207,6 +210,9 @@
                     </div>
                     <div class="FotoBx">
                         <img src="img/matheus/IMG-20181225-WA0063.jpg">
+                    </div>
+                    <div class="FotoBx hide none">
+                        <img src="img/matheus/ImageTeste.jpeg">
                     </div>
                 </div>
             </div>
@@ -239,6 +245,7 @@
                 $(".four").remove();
                 $(".iconsFT").addClass("cem");
                 $(".FotoBx").addClass("metade");
+                $(".FotoBx").removeClass("none");
             }
             if (getClass === 'iconsFT cem') {
                 $(".iconsFT").removeClass("cem");
@@ -256,6 +263,7 @@
                 $(".five").remove();
                 $(".six").remove();
                 $(".FotoBx").removeClass("cem");
+                $(".hide").addClass("none");
             }
         });
     </script>
