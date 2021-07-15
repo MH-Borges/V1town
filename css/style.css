@@ -393,7 +393,7 @@ img, svg {
 #Foto .iconFts {
   position: fixed;
   top: 85vh;
-  left: 33.5vw;
+  left: 33.3vw;
   width: 3.5vw;
   height: 3.5vw;
   display: -webkit-box;
@@ -515,12 +515,10 @@ img, svg {
   font-weight: 300;
 }
 
-#Tipogr select {
+#Tipogr #type {
   position: absolute;
-  left: -10vw;
+  left: -12vw;
   top: 1.5vw;
-  outline: none;
-  width: 8vw;
 }
 
 #Tipogr .abelhalinks {
