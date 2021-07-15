@@ -103,6 +103,10 @@ img, svg {
   width: 100%;
 }
 
+.none {
+  display: none;
+}
+
 .Menu {
   width: 25vw;
   height: 93vh;
@@ -403,12 +407,14 @@ img, svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 #Foto .iconFts .iconsFT {
   background: #0C0C0C;
   width: 32.3%;
-  height: 48.5%;
+  height: 47.8%;
 }
 
 #Foto .iconFts .metade {
@@ -418,6 +424,10 @@ img, svg {
 #Foto .iconFts .cem {
   width: 100% !important;
   height: 100%;
+}
+
+#Foto .iconFts.actived {
+  left: 23.5vw;
 }
 
 #Foto .blockfts {
@@ -485,6 +495,7 @@ img, svg {
 
 #Tipogr {
   width: 100%;
+  position: relative;
 }
 
 #Tipogr h2 {
@@ -494,6 +505,22 @@ img, svg {
   font-size: 4vw;
   margin: 0;
   font-family: 'Abelha';
+}
+
+#Tipogr .padrao {
+  font-weight: 500;
+}
+
+#Tipogr .regular {
+  font-weight: 300;
+}
+
+#Tipogr select {
+  position: absolute;
+  left: -6vw;
+  top: 1.5vw;
+  outline: none;
+  width: 5vw;
 }
 
 #Tipogr .abelhalinks {

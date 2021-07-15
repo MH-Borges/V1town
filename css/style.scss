@@ -19,6 +19,9 @@ img,svg{
     display: block;
     width: 100%;
 }
+.none{
+    display: none;
+}
 @import 'compiler/menu';
 @import 'compiler/menuSecond';
 @import 'compiler/design';

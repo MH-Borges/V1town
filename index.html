@@ -238,11 +238,15 @@
 
             <div class="tab-pane fade show active" id="Tipogr">
                 <h2 id="testAbelha" contenteditable=""><span id="Abelha"> Abelha Gorda </span></h2>
+                <select id="type" class="none">
+                    <option value="padrao">Padrão</option>
+                    <option value="regular">Regular</option>
+                </select>
                 <nav class="abelhalinks">
                     <ul>
                         <a class="AbelhaTeste"><li>Testar</li></a>
                         <a href="https://www.behance.net/gallery/114952745/Abelha-my-first-geometric-sans-typeface" target="_blank"><li>Inspo</li></a>
-                        <a href=""><li>Specimen</li></a>
+                        <a href="" target="_blank"><li>Specimen</li></a>
                         <a href="font/abelhagorda.otf" target="_blank"><li>download</li></a>
                     </ul>
                 </nav>
@@ -279,7 +283,8 @@
 
         $("#activelogo").on("click", () => {
             $(".Menu").toggleClass("actived");
-            $(".content").toggleClass("actived");   
+            $(".content").toggleClass("actived");
+            $(".iconFts").toggleClass("actived");  
         });
         
         $(".iconFts").on("click", () => {
@@ -320,6 +325,7 @@
                 abelha = '<span id="TesteAgora"> Clique aqui e teste </span>';  
                 $("#Abelha").remove();
                 $("#testAbelha").append(abelha);
+                $("#type").removeClass("none");
             }
             else{
                 abelha = '<span id="Abelha"> Abelha Gorda </span>';  
@@ -327,6 +333,20 @@
                 $("#testAbelha").append(abelha);
             }
         });
+
+        $("#type").on("click", () => {
+            var select = $("#type option:selected").val();
+            console.log(select);
+            if(select === 'padrao'){
+                $("#testAbelha").removeClass("regular");
+                $('#testAbelha').addClass("padrao");
+            }
+            if(select === 'regular'){
+                $("#testAbelha").removeClass("padrao");
+                $('#testAbelha').addClass("regular");
+            }
+        });
+
     </script>
     
 
