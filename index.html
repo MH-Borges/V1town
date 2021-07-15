@@ -242,9 +242,11 @@
                     <option value="bold">Abelha Gorda</option>
                     <option value="regular">Abelha Regular</option>
                 </select>
+                <input id="slider" class="none" type="range" min="20" max="120" value="0" step="1">
+                
                 <nav class="abelhalinks">
                     <ul>
-                        <a class="AbelhaTeste"><li>Testar</li></a>
+                        <a class="AbelhaTeste"><li id="MudaTeste">Testar</li></a>
                         <a href="https://www.behance.net/gallery/114952745/Abelha-my-first-geometric-sans-typeface" target="_blank"><li>Inspo</li></a>
                         <a href="" target="_blank"><li>Specimen</li></a>
                         <a id="linkDownload" href="font/abelhagorda.otf" target="_blank"><li>download</li></a>
@@ -315,23 +317,33 @@
                 $(".iconFts").append(two, three, four, five, six);
                 $(".FotoBx").removeClass("cem");
                 $(".hide").addClass("none");
-                
             }
         });
     
         $(".AbelhaTeste").on("click", () => {
             var abelha = $("#Abelha").text();
             if (abelha.trim() === 'Abelha') {
-                abelha = '<span id="TesteAgora"> Clique aqui e teste </span>';  
+                abelha = '<span id="TesteAgora"> Clique aqui e teste </span>';
+                TesteMuda = '<li id="resetAbelha"> Resetar </li>';  
                 $("#Abelha").remove();
                 $("#testAbelha").append(abelha);
+                $("#MudaTeste").remove();
+                $(".AbelhaTeste").append(TesteMuda);
                 $("#type").removeClass("none");
+                $("#slider").removeClass("none");
             }
             else{
-                abelha = '<span id="Abelha"> Abelha </span>';  
+                abelha = '<span id="Abelha"> Abelha </span>'; 
+                TesteMuda = '<li id="MudaTeste">Testar</li>'; 
                 $("#TesteAgora").remove();
                 $("#testAbelha").append(abelha);
+                $("#resetAbelha").remove();
+                $(".AbelhaTeste").append(TesteMuda);
                 $("#type").addClass("none");
+                $("#slider").addClass("none");
+                $("#testAbelha").removeClass("regular");
+                $('#testAbelha').addClass("bold");
+                $('#testAbelha').css("font-size", "4vw");
             }
         });
 
@@ -347,6 +359,10 @@
                 $('#testAbelha').addClass("regular");
                 $("#linkDownload").attr("href", "font/abelharegular.otf");
             }
+        });
+
+        $("#slider").on("input",function () {
+            $('#testAbelha').css("font-size", $(this).val() + "px");
         });
 
     </script>

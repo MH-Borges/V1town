@@ -517,8 +517,41 @@ img, svg {
 
 #Tipogr #type {
   position: absolute;
-  left: -12vw;
+  left: -13vw;
   top: 1.5vw;
+  border: 1px solid #FFFFFF;
+  color: #0C0C0C;
+  width: 11vw;
+}
+
+#Tipogr #slider {
+  position: absolute;
+  left: -13vw;
+  top: 5vw;
+}
+
+#Tipogr input[type=range] {
+  -webkit-appearance: none;
+  width: 11vw;
+}
+
+#Tipogr input[type=range]::-webkit-slider-runnable-track {
+  height: 1vh;
+  background: #0C0C0C;
+}
+
+#Tipogr input[type=range]::-webkit-slider-thumb {
+  height: 3.5vh;
+  width: 0.3vw;
+  border-radius: 2px;
+  background: #0C0C0C;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -1.2vh;
+}
+
+#Tipogr input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #0C0C0C;
 }
 
 #Tipogr .abelhalinks {
@@ -663,6 +696,18 @@ img, svg {
 
 .light-theme #Tipogr h2 {
   color: #FFFFFF;
+}
+
+.light-theme #Tipogr input[type=range]::-webkit-slider-runnable-track {
+  background: #FFFFFF;
+}
+
+.light-theme #Tipogr input[type=range]::-webkit-slider-thumb {
+  background: #FFFFFF;
+}
+
+.light-theme #Tipogr input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #FFFFFF;
 }
 
 .light-theme #Tipogr .abelhalinks ul a {

@@ -17,8 +17,36 @@
     }
     #type{
         position: absolute;
-        left: -12vw;
+        left: -13vw;
         top: 1.5vw;
+        border:1px solid $White;
+        color: $Black;
+        width: 11vw;
+    }
+    #slider{
+        position: absolute;
+        left: -13vw;
+        top: 5vw;
+    }
+    input[type=range] {
+        -webkit-appearance: none;
+        width: 11vw;
+    }
+    input[type=range]::-webkit-slider-runnable-track {
+        height: 1vh;
+        background: $Black;
+    }
+    input[type=range]::-webkit-slider-thumb {
+        height: 3.5vh;
+        width: 0.3vw;
+        border-radius: 2px;
+        background: $Black;
+        cursor: pointer;
+        -webkit-appearance: none;
+        margin-top: -1.2vh;
+    }
+    input[type=range]:focus::-webkit-slider-runnable-track {
+        background: $Black;
     }
     .abelhalinks{
         width: 100%;

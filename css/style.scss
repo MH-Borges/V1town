@@ -19,9 +19,8 @@ img,svg{
     display: block;
     width: 100%;
 }
-.none{
-    display: none;
-}
+.none{ display: none; }
+
 @import 'compiler/menu';
 @import 'compiler/menuSecond';
 @import 'compiler/design';
@@ -69,7 +68,10 @@ img,svg{
         .blockfts{ h2{ color: $White; } .FotoBx{ background: $White; } }
     }
     #Tipogr{
-        h2{ color: $White; }
+        h2{color: $White;}
+        input[type=range]::-webkit-slider-runnable-track { background: $White; }
+        input[type=range]::-webkit-slider-thumb { background: $White; }
+        input[type=range]:focus::-webkit-slider-runnable-track { background: $White; }
         .abelhalinks{ ul{ a{ color: $White; } } }
     }
 }
