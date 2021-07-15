@@ -239,7 +239,7 @@
             <div class="tab-pane fade show active" id="Tipogr">
                 <h2 id="testAbelha" contenteditable=""><span id="Abelha"> Abelha Gorda </span></h2>
                 <select id="type" class="none">
-                    <option value="padrao">Padrão</option>
+                    <option value="bold">Bold</option>
                     <option value="regular">Regular</option>
                 </select>
                 <nav class="abelhalinks">
@@ -337,12 +337,12 @@
         $("#type").on("click", () => {
             var select = $("#type option:selected").val();
             console.log(select);
-            if(select === 'padrao'){
+            if(select === 'bold'){
                 $("#testAbelha").removeClass("regular");
-                $('#testAbelha').addClass("padrao");
+                $('#testAbelha').addClass("bold");
             }
             if(select === 'regular'){
-                $("#testAbelha").removeClass("padrao");
+                $("#testAbelha").removeClass("bold");
                 $('#testAbelha').addClass("regular");
             }
         });
