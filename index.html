@@ -237,17 +237,17 @@
             </div>
 
             <div class="tab-pane fade show active" id="Tipogr">
-                <h2 id="testAbelha" contenteditable=""><span id="Abelha"> Abelha Gorda </span></h2>
+                <h2 id="testAbelha" contenteditable=""><span id="Abelha"> Abelha </span></h2>
                 <select id="type" class="none">
-                    <option value="bold">Bold</option>
-                    <option value="regular">Regular</option>
+                    <option value="bold">Abelha Gorda</option>
+                    <option value="regular">Abelha Regular</option>
                 </select>
                 <nav class="abelhalinks">
                     <ul>
                         <a class="AbelhaTeste"><li>Testar</li></a>
                         <a href="https://www.behance.net/gallery/114952745/Abelha-my-first-geometric-sans-typeface" target="_blank"><li>Inspo</li></a>
                         <a href="" target="_blank"><li>Specimen</li></a>
-                        <a href="font/abelhagorda.otf" target="_blank"><li>download</li></a>
+                        <a id="linkDownload" href="font/abelhagorda.otf" target="_blank"><li>download</li></a>
                     </ul>
                 </nav>
                 <div class="PosterBx">
@@ -321,14 +321,14 @@
     
         $(".AbelhaTeste").on("click", () => {
             var abelha = $("#Abelha").text();
-            if (abelha.trim() === 'Abelha Gorda') {
+            if (abelha.trim() === 'Abelha') {
                 abelha = '<span id="TesteAgora"> Clique aqui e teste </span>';  
                 $("#Abelha").remove();
                 $("#testAbelha").append(abelha);
                 $("#type").removeClass("none");
             }
             else{
-                abelha = '<span id="Abelha"> Abelha Gorda </span>';  
+                abelha = '<span id="Abelha"> Abelha </span>';  
                 $("#TesteAgora").remove();
                 $("#testAbelha").append(abelha);
             }
@@ -340,10 +340,12 @@
             if(select === 'bold'){
                 $("#testAbelha").removeClass("regular");
                 $('#testAbelha').addClass("bold");
+                $("#linkDownload").attr("href", "font/abelhagorda.otf");
             }
             if(select === 'regular'){
                 $("#testAbelha").removeClass("bold");
                 $('#testAbelha').addClass("regular");
+                $("#linkDownload").attr("href", "font/abelharegular.otf");
             }
         });
 
