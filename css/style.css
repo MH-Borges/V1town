@@ -498,7 +498,61 @@ img, svg {
   position: relative;
 }
 
-#Tipogr h2 {
+#Tipogr .FeaturesFont {
+  padding: 1vw 0 2vw 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#Tipogr .FeaturesFont select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg height='20' width='20' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20.73 11.02'><g id='Camada_2' data-name='Camada 2'><g id='Camada_1-2' data-name='Camada 1'><polygon points='11.94 11.02 8.79 11.02 0 3.88 3.15 0 10.36 5.86 17.58 0 20.73 3.88 11.94 11.02'/></g></g></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 0.5vw;
+  padding: 0.2vw 1.5vw 0 0.2vw;
+  margin-right: 1vw;
+  font-size: 1.3vw;
+  font-family: 'Abelha';
+  outline: none;
+  color: #0C0C0C;
+}
+
+#Tipogr .FeaturesFont input[type=range] {
+  -webkit-appearance: none;
+  width: 10vw;
+}
+
+#Tipogr .FeaturesFont input[type=range]::-webkit-slider-runnable-track {
+  height: 0.5vh;
+  background: #0C0C0C;
+}
+
+#Tipogr .FeaturesFont input[type=range]::-webkit-slider-thumb {
+  height: 1.1vw;
+  width: 1.1vw;
+  border-radius: 50%;
+  background: #0C0C0C;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -0.4vw;
+}
+
+#Tipogr .FeaturesFont input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #0C0C0C;
+}
+
+#Tipogr .abelhaNlinks {
+  margin-bottom: 2vw;
+}
+
+#Tipogr .abelhaNlinks h2 {
   font-weight: 500;
   outline: none;
   color: #0C0C0C;
@@ -507,67 +561,28 @@ img, svg {
   font-family: 'Abelha';
 }
 
-#Tipogr .bold {
+#Tipogr .abelhaNlinks .bold {
   font-weight: 500;
 }
 
-#Tipogr .regular {
+#Tipogr .abelhaNlinks .regular {
   font-weight: 300;
 }
 
-#Tipogr #type {
-  position: absolute;
-  left: -13vw;
-  top: 1.5vw;
-  border: 1px solid #FFFFFF;
-  color: #0C0C0C;
-  width: 11vw;
-}
-
-#Tipogr #slider {
-  position: absolute;
-  left: -13vw;
-  top: 5vw;
-}
-
-#Tipogr input[type=range] {
-  -webkit-appearance: none;
-  width: 11vw;
-}
-
-#Tipogr input[type=range]::-webkit-slider-runnable-track {
-  height: 1vh;
-  background: #0C0C0C;
-}
-
-#Tipogr input[type=range]::-webkit-slider-thumb {
-  height: 3.5vh;
-  width: 0.3vw;
-  border-radius: 2px;
-  background: #0C0C0C;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -1.2vh;
-}
-
-#Tipogr input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #0C0C0C;
-}
-
-#Tipogr .abelhalinks {
+#Tipogr .abelhaNlinks .abelhalinks {
   width: 100%;
   font-family: 'Redonda';
 }
 
-#Tipogr .abelhalinks ul {
+#Tipogr .abelhaNlinks .abelhalinks ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  margin: -0.5vw 0 0 -0.5vw;
+  margin: -1vw 0 0 -0.5vw;
 }
 
-#Tipogr .abelhalinks ul a {
+#Tipogr .abelhaNlinks .abelhalinks ul a {
   color: #0C0C0C;
   text-decoration: none;
   padding: 0.5vw;
@@ -575,6 +590,71 @@ img, svg {
   font-size: 1vw;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+#Tipogr .divider {
+  width: 100%;
+  border: 1px solid #0C0C0C;
+  margin: 1.5vw 0;
+}
+
+#Tipogr .features {
+  padding: 1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: 'Abelha';
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#Tipogr .features h3 {
+  font-size: 3vw;
+  text-align: left;
+  padding-right: 1vw;
+  line-height: 2.5vw;
+}
+
+#Tipogr .features .BxFeatures {
+  width: 49%;
+  margin: 2vw 0 0.5vw 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5vw;
+}
+
+#Tipogr .features .BxFeatures span {
+  width: 30%;
+  font-size: 1.2vw;
+  color: #FF6D00;
+  padding-right: 0.5vw;
+}
+
+#Tipogr .features .BxFeatures .changeFT {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 8vh;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#Tipogr .features .BxFeatures .changeFT svg {
+  width: 90%;
+}
+
+#Tipogr .features .BxFeatures .bigboi {
+  height: 12vh;
 }
 
 #Tipogr .PosterBx {
@@ -585,6 +665,18 @@ img, svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 5vw;
+}
+
+#Tipogr .PosterBx h3 {
+  font-family: 'Redonda';
+  font-weight: 300;
+  font-style: italic;
+  width: 100%;
+  font-size: 1.8vw;
+  margin: 1vw 0 2vw 0;
 }
 
 #Tipogr .PosterBx .Poster {
@@ -596,6 +688,8 @@ img, svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -610,6 +704,13 @@ img, svg {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1vw;
+}
+
+#Tipogr .PosterBx .Poster span {
+  padding: 0.5vw 0;
+  width: 100%;
+  font-size: 1vw;
+  color: #FF6D00;
 }
 
 ::-webkit-scrollbar-track {

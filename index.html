@@ -87,15 +87,16 @@
 
     <section class="content" >
         <div class="nav nav-pills MenuInside">
-            <a class="MenuSd" data-toggle="pill" href="#Design" aria-selected="true">Design</a>
+            <a class="MenuSd active" data-toggle="pill" href="#Design" aria-selected="true">Design</a>
             <a class="MenuSd" data-toggle="pill" href="#Foto" aria-selected="false">Fotografia</a>
-            <a class="MenuSd active" data-toggle="pill" href="#Tipogr" aria-selected="false">Tipografia</a>
+            <a class="MenuSd" data-toggle="pill" href="#Tipogr" aria-selected="false">Tipografia</a>
             <a class="MenuSd" data-toggle="pill" href="#sketch" aria-selected="false">Sketch</a>
+            <a class="MenuSd" data-toggle="pill" href="#Studio" aria-selected="false">Studio</a>
             <a class="MenuSd" data-toggle="pill" href="#contato" aria-selected="false">contato</a>
         </div>
 
         <div class="tab-content TabsBx">
-            <div class="tab-pane fade" id="Design">
+            <div class="tab-pane fade show active" id="Design">
                 <div class="carouselBx">
                     <div id="BlockCarousel" class="carousel slide belm" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -236,34 +237,78 @@
                 </div>
             </div>
 
-            <div class="tab-pane fade show active" id="Tipogr">
-                <h2 id="testAbelha" contenteditable=""><span id="Abelha"> Abelha </span></h2>
-                <select id="type" class="none">
-                    <option value="bold">Abelha Gorda</option>
-                    <option value="regular">Abelha Regular</option>
-                </select>
-                <input id="slider" class="none" type="range" min="20" max="120" value="0" step="1">
+            <div class="tab-pane fade" id="Tipogr">
+                <div class="FeaturesFont">
+                    <select id="type">
+                        <option value="bold">Gorda</option>
+                        <option value="regular">Regular</option>
+                    </select>
+                    <input id="slider" type="range" min="35" max="300" value="0" step="1">
+                </div>
+                <div class="abelhaNlinks">
+                    <h2 id="testAbelha" contenteditable=""><span id="Abelha"> Abelha </span></h2>
+                    <nav class="abelhalinks">
+                        <ul>
+                            <a class="AbelhaTeste"><li id="MudaTeste">Testar</li></a>
+                            <a href="https://www.behance.net/gallery/114952745/Abelha-my-first-geometric-sans-typeface" target="_blank"><li>Inspo</li></a>
+                            <a href="" target="_blank"><li>Specimen</li></a>
+                            <a id="linkDownload" href="font/abelhagorda.otf" target="_blank"><li>download</li></a>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="divider"></div>
                 
-                <nav class="abelhalinks">
-                    <ul>
-                        <a class="AbelhaTeste"><li id="MudaTeste">Testar</li></a>
-                        <a href="https://www.behance.net/gallery/114952745/Abelha-my-first-geometric-sans-typeface" target="_blank"><li>Inspo</li></a>
-                        <a href="" target="_blank"><li>Specimen</li></a>
-                        <a id="linkDownload" href="font/abelhagorda.otf" target="_blank"><li>download</li></a>
-                    </ul>
-                </nav>
+                <div class="features">
+                    <h3>Uma fonte geométrica com inspiração em fontes humanistas</h3>
+                    <div class="ss01 BxFeatures">
+                        <span>ss01 Tradicional</span>
+                        <div class="changeFT TradicionalFt bigboi">
+                            <img class="Tradicional" src="img/tradicional.svg" onload="SVGInject(this)">
+                            <img class="TradicionalOn none" src="img/tradicionalOn.svg" onload="SVGInject(this)">
+                        </div>
+                    </div>
+                    <div class="ss02 BxFeatures bigboi">
+                        <span>ss02 Decorativa</span>
+                        <div class="changeFT DecorativaFt">
+                            <img class="Decorativa" src="img/Decorativos.svg" onload="SVGInject(this)">
+                            <img class="DecorativaOn none" src="img/DecorativosOn.svg" onload="SVGInject(this)">
+                        </div>
+                    </div>
+                    <div class="liga BxFeatures">
+                        <span>Ligaturas</span>
+                        <div class="changeFT LigaturasFt">
+                            <img class="Ligaturas" src="img/Ligaturas.svg" onload="SVGInject(this)">
+                            <img class="LigaturasOn none" src="img/LigaturasOn.svg" onload="SVGInject(this)">
+                        </div>
+                    </div>
+                    <div class="seta BxFeatures">
+                        <span>Setas</span>
+                        <div class="changeFT SetasFt">
+                            <img class="Setas" src="img/Setas.svg" onload="SVGInject(this)">
+                            <img class="SetasOn none" src="img/SetasOn.svg" onload="SVGInject(this)">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="divider"></div>
+                
                 <div class="PosterBx">
+                    <h3>Posteres & Trabalhos usando Abelha</h3>
                     <div class="Poster">
                         <img src="img/abelhabeezinthetrap.jpg">
+                        <span>beez in da trap <br>(@v1town)</span>
                     </div>
                     <div class="Poster">
                         <img src="img/abelhabeezinthetrap.jpg">
+                        <span>AbeLHA&@* <br> (@thuizera & @v1town)</span>
                     </div>
                 </div>
             </div>
 
             <div class="tab-pane fade" id="sketch">teste 04</div>
-            <div class="tab-pane fade" id="contato">teste 05</div>
+            <div class="tab-pane fade" id="Studio">teste 05</div>
+            <div class="tab-pane fade" id="contato">teste 06</div>
         </div>
     </section>
 
@@ -329,18 +374,18 @@
                 $("#testAbelha").append(abelha);
                 $("#MudaTeste").remove();
                 $(".AbelhaTeste").append(TesteMuda);
-                $("#type").removeClass("none");
-                $("#slider").removeClass("none");
             }
             else{
                 abelha = '<span id="Abelha"> Abelha </span>'; 
                 TesteMuda = '<li id="MudaTeste">Testar</li>'; 
+                
+                $("#Abelha").remove();
+                $("#MudaTeste").remove();
+
                 $("#TesteAgora").remove();
                 $("#testAbelha").append(abelha);
                 $("#resetAbelha").remove();
                 $(".AbelhaTeste").append(TesteMuda);
-                $("#type").addClass("none");
-                $("#slider").addClass("none");
                 $("#testAbelha").removeClass("regular");
                 $('#testAbelha').addClass("bold");
                 $('#testAbelha').css("font-size", "4vw");
@@ -364,6 +409,45 @@
         $("#slider").on("input",function () {
             $('#testAbelha').css("font-size", $(this).val() + "px");
         });
+
+        $(document).ready(()=> {
+            $(".TradicionalFt").mouseenter(()=> {
+                $('.Tradicional').addClass("none");
+                $('.TradicionalOn').removeClass("none");
+            })
+            .mouseleave(()=> {
+                $('.Tradicional').removeClass("none");
+                $('.TradicionalOn').addClass("none");
+            });
+
+            $(".DecorativaFt").mouseenter(()=> {
+                $('.Decorativa').addClass("none");
+                $('.DecorativaOn').removeClass("none");
+            })
+            .mouseleave(()=> {
+                $('.Decorativa').removeClass("none");
+                $('.DecorativaOn').addClass("none");
+            });
+
+            $(".LigaturasFt").mouseenter(()=> {
+                $('.Ligaturas').addClass("none");
+                $('.LigaturasOn').removeClass("none");
+            })
+            .mouseleave(()=> {
+                $('.Ligaturas').removeClass("none");
+                $('.LigaturasOn').addClass("none");
+            });
+            
+            $(".SetasFt").mouseenter(()=> {
+                $('.Setas').addClass("none");
+                $('.SetasOn').removeClass("none");
+            })
+            .mouseleave(()=> {
+                $('.Setas').removeClass("none");
+                $('.SetasOn').addClass("none");
+            });
+        });
+        
 
     </script>
     
