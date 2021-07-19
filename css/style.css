@@ -618,6 +618,7 @@ img, svg {
   text-align: left;
   padding-right: 1vw;
   line-height: 2.5vw;
+  color: #0C0C0C;
 }
 
 #Tipogr .features .BxFeatures {
@@ -631,9 +632,11 @@ img, svg {
 
 #Tipogr .features .BxFeatures span {
   width: 30%;
-  font-size: 1.2vw;
+  font-size: 1vw;
   color: #FF6D00;
   padding-right: 0.5vw;
+  text-transform: uppercase;
+  line-height: 1vw;
 }
 
 #Tipogr .features .BxFeatures .changeFT {
@@ -677,6 +680,7 @@ img, svg {
   width: 100%;
   font-size: 1.8vw;
   margin: 1vw 0 2vw 0;
+  color: #0C0C0C;
 }
 
 #Tipogr .PosterBx .Poster {
@@ -795,23 +799,51 @@ img, svg {
   background: #FFFFFF;
 }
 
-.light-theme #Tipogr h2 {
+.light-theme #Tipogr .FeaturesFont select {
   color: #FFFFFF;
 }
 
-.light-theme #Tipogr input[type=range]::-webkit-slider-runnable-track {
-  background: #FFFFFF;
+.light-theme #Tipogr .FeaturesFont input[type=range]::-webkit-slider-runnable-track {
+  background: #0C0C0C;
 }
 
-.light-theme #Tipogr input[type=range]::-webkit-slider-thumb {
-  background: #FFFFFF;
+.light-theme #Tipogr .FeaturesFont input[type=range]::-webkit-slider-thumb {
+  background: #0C0C0C;
 }
 
-.light-theme #Tipogr input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #FFFFFF;
+.light-theme #Tipogr .FeaturesFont input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #0C0C0C;
 }
 
-.light-theme #Tipogr .abelhalinks ul a {
+.light-theme #Tipogr .abelhaNlinks h2 {
   color: #FFFFFF;
+}
+
+.light-theme #Tipogr .abelhaNlinks .abelhalinks ul a {
+  color: #FFFFFF;
+}
+
+.light-theme #Tipogr .divider {
+  border: 1px solid #FFFFFF;
+}
+
+.light-theme #Tipogr .features h3 {
+  color: #FFFFFF;
+}
+
+.light-theme #Tipogr .features .BxFeatures span {
+  color: #0584FF;
+}
+
+.light-theme #Tipogr .PosterBx h3 {
+  color: #FFFFFF;
+}
+
+.light-theme #Tipogr .PosterBx .Poster {
+  background-color: #FFFFFF;
+}
+
+.light-theme #Tipogr .PosterBx .Poster span {
+  color: #0584FF;
 }
 /*# sourceMappingURL=style.css.map */

@@ -68,10 +68,57 @@ img,svg{
         .blockfts{ h2{ color: $White; } .FotoBx{ background: $White; } }
     }
     #Tipogr{
-        h2{color: $White;}
-        input[type=range]::-webkit-slider-runnable-track { background: $White; }
-        input[type=range]::-webkit-slider-thumb { background: $White; }
-        input[type=range]:focus::-webkit-slider-runnable-track { background: $White; }
-        .abelhalinks{ ul{ a{ color: $White; } } }
+        .FeaturesFont{
+            select {
+                color: $White;
+            }
+            input[type=range]::-webkit-slider-runnable-track {
+                background: $Black;
+            }
+            input[type=range]::-webkit-slider-thumb {
+                background: $Black;
+            }
+            input[type=range]:focus::-webkit-slider-runnable-track {
+                background: $Black;
+            }
+        }
+        .abelhaNlinks{
+            h2{
+                color: $White;
+            }
+            .abelhalinks{
+                ul{
+                    a{
+                        color: $White;
+                    }
+                }
+            }
+        }
+    
+        .divider{
+            border: 1px solid $White;
+        }
+        .features{
+            h3{
+                color: $White;
+            }
+            .BxFeatures{
+                span{
+                    color: $Blue;
+                }
+            }
+        }
+    
+        .PosterBx{
+            h3{
+                color: $White;
+            }
+            .Poster{
+                background-color: $White;
+                span{
+                    color: $Blue;
+                }
+            }
+        }
     }
 }
