@@ -107,6 +107,10 @@ img, svg {
   display: none;
 }
 
+.orange {
+  fill: #FF6D00;
+}
+
 ::-webkit-scrollbar-track {
   background-color: #FFFFFF;
 }
@@ -796,7 +800,7 @@ img, svg {
   font-family: 'Redonda';
   font-weight: 300;
   font-size: 1.1vw;
-  margin: 1vw 0 5vw 0;
+  margin: 1vw 0 3vw 0;
   color: #0C0C0C;
 }
 
@@ -817,7 +821,7 @@ img, svg {
 
 #Studio .StudioJobs .BxStudio {
   width: 49%;
-  margin: 1vw 0;
+  margin: 5vw 0 1vw 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -837,6 +841,7 @@ img, svg {
   padding: 0.5vw 2.5vw 0 1vw;
   color: #0C0C0C;
   font-size: 1vw;
+  font-weight: 300;
 }
 
 #contato {
@@ -957,6 +962,10 @@ img, svg {
 
 .light-theme .Menu .BxLogos .Logo svg path {
   fill: #FFFFFF;
+}
+
+.light-theme .Menu .BxLogos .LongLogo .orange {
+  fill: #0584FF;
 }
 
 .light-theme .Menu .BxLogos .LongLogo svg {
