@@ -515,7 +515,7 @@ img, svg {
   background-image: url("data:image/svg+xml;utf8,<svg height='20' width='20' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20.73 11.02'><g id='Camada_2' data-name='Camada 2'><g id='Camada_1-2' data-name='Camada 1'><polygon points='11.94 11.02 8.79 11.02 0 3.88 3.15 0 10.36 5.86 17.58 0 20.73 3.88 11.94 11.02'/></g></g></svg>");
   background-repeat: no-repeat;
   background-position-x: 95%;
-  background-position-y: 0.5vw;
+  background-position-y: 0.4vw;
   padding: 0.2vw 1.5vw 0 0.2vw;
   margin-right: 1vw;
   font-size: 1.3vw;
@@ -524,9 +524,15 @@ img, svg {
   color: #0C0C0C;
 }
 
+#Tipogr .FeaturesFont select * {
+  color: #0C0C0C;
+}
+
 #Tipogr .FeaturesFont input[type=range] {
   -webkit-appearance: none;
   width: 10vw;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 #Tipogr .FeaturesFont input[type=range]::-webkit-slider-runnable-track {
@@ -717,6 +723,56 @@ img, svg {
   color: #FF6D00;
 }
 
+#sketch {
+  width: 100%;
+}
+
+#sketch .BlockSketch {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0.5vw 1vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#sketch .BlockSketch h2 {
+  font-family: "Redonda";
+  font-weight: 700;
+  font-size: 1.2vw;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-top: 1vw;
+  color: #0C0C0C;
+  text-transform: uppercase;
+}
+
+#sketch .BlockSketch .SketchBx {
+  background-color: #0C0C0C;
+  border-radius: 1vw;
+  height: 29vh;
+  width: 24%;
+  margin: 1vw 0;
+}
+
+#sketch .BlockSketch .SketchBx img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1vw;
+}
+
+#Studio {
+  width: 100%;
+  border: red solid 5px;
+}
+
 ::-webkit-scrollbar-track {
   background-color: #FFFFFF;
 }
@@ -800,19 +856,24 @@ img, svg {
 }
 
 .light-theme #Tipogr .FeaturesFont select {
+  background-image: url("data:image/svg+xml;utf8,<svg height='20' width='20' fill='white' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20.73 11.02'><g fill='white' id='Camada_2' data-name='Camada 2'><g fill='white' id='Camada_1-2' data-name='Camada 1'><polygon fill='white' points='11.94 11.02 8.79 11.02 0 3.88 3.15 0 10.36 5.86 17.58 0 20.73 3.88 11.94 11.02'/></g></g></svg>");
   color: #FFFFFF;
 }
 
+.light-theme #Tipogr .FeaturesFont input[type=range] {
+  background-color: #0C0C0C;
+}
+
 .light-theme #Tipogr .FeaturesFont input[type=range]::-webkit-slider-runnable-track {
-  background: #0C0C0C;
+  background: #FFFFFF;
 }
 
 .light-theme #Tipogr .FeaturesFont input[type=range]::-webkit-slider-thumb {
-  background: #0C0C0C;
+  background: #FFFFFF;
 }
 
 .light-theme #Tipogr .FeaturesFont input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #0C0C0C;
+  background: #FFFFFF;
 }
 
 .light-theme #Tipogr .abelhaNlinks h2 {
@@ -845,5 +906,13 @@ img, svg {
 
 .light-theme #Tipogr .PosterBx .Poster span {
   color: #0584FF;
+}
+
+.light-theme #sketch .BlockSketch h2 {
+  color: #FFFFFF;
+}
+
+.light-theme #sketch .BlockSketch .SketchBx {
+  background-color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */
