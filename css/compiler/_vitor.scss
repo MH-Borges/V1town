@@ -1,0 +1,38 @@
+.vitorBx{
+    display: flex;
+    padding: 3vw;
+    width: 100%;
+    .imgBx{
+        width: 45%;
+        display: flex;
+        align-items: center;
+        img{
+            padding: 2vw;
+            border: 10px solid $Black;
+        }
+    }
+    .vitorInfo{
+        width: 55%;
+        padding: 2vw 2vw 2vw 4vw;
+        font-family: 'Redonda';
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1{
+            width: 100%;
+            color: $Black;
+            font-size: 2.5vw;
+            font-weight: 700;
+        }
+        .textoVitor{
+            padding:0.5vw 5vw 1vw 0;
+            font-weight: 300;
+            font-size: 0.9vw;
+            color: $Black;
+            #lastF{
+                font-weight: 700;
+                font-size: 1vw;
+            }
+        }
+    }
+}

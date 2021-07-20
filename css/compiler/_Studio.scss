@@ -1,4 +1,44 @@
 #Studio{
     width: 100%;
-    border: red solid 5px;
+    padding-top: 2vw;
+    svg{
+        padding: 1vw 6vw;
+        fill: $Black;
+    }
+    h4{
+        text-align: center;
+        width: 100%;
+        font-family: 'Redonda';
+        font-weight: 300;
+        font-size: 1.1vw;
+        margin: 1vw 0 5vw 0;
+        color: $Black;
+    }
+    .StudioJobs{
+        padding: 1vw;
+        display: flex;
+        flex-wrap: wrap;
+        font-family: 'Abelha';
+        align-content: center;
+        justify-content: space-between;
+        .BxStudio{
+            width: 49%;
+            margin: 1vw 0;
+            display: flex;
+            span{
+                width: 35%;
+                font-size: 1vw;
+                color: $Orange;
+                text-transform: uppercase;
+                line-height: 1.2vw;
+                padding: 0.5vw;
+            }
+            .textStudio{
+                width: 65%;
+                padding: 0.5vw 2.5vw 0 1vw;
+                color: $Black;
+                font-size: 1vw;
+            }
+        }
+    }
 }

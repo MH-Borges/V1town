@@ -21,6 +21,10 @@ img,svg{
 }
 .none{ display: none; }
 
+::-webkit-scrollbar-track{background-color: $White;}
+::-webkit-scrollbar{width: 0.75vw;}
+::-webkit-scrollbar-thumb{background:$Black;}
+
 @import 'compiler/menu';
 @import 'compiler/menuSecond';
 @import 'compiler/design';
@@ -28,10 +32,8 @@ img,svg{
 @import 'compiler/tipogra';
 @import 'compiler/sketch';
 @import 'compiler/Studio';
-
-::-webkit-scrollbar-track{background-color: $White;}
-::-webkit-scrollbar{width: 0.75vw;}
-::-webkit-scrollbar-thumb{background:$Black;}
+@import 'compiler/contato';
+@import 'compiler/vitor';
 
 .light-theme {
     background: $Black;
@@ -64,7 +66,9 @@ img,svg{
             .active{ color: $Blue; }
         }
     }
-    #Design{ h2{ color: $White; } }
+    #Design{ 
+        h2{ color: $White; } 
+    }
     #Foto{ 
         .iconFts{ .iconsFT{ background: $White; } }
         .blockfts{ h2{ color: $White; } .FotoBx{ background: $White; } }
@@ -97,5 +101,22 @@ img,svg{
             h2{ color: $White; } 
             .SketchBx{ background-color: $White; } 
         } 
+    }
+    #Studio{
+        svg{ fill: $White; }
+        h4{ color: $White; }
+        .StudioJobs{ .BxStudio{ span{ color: $Blue; } .textStudio{ color: $White; } } }
+    }
+    #contato{ 
+        .BxContato{ .Linkscontato{ a{ background-color: $Blue; } } } 
+    }
+    .vitorBx{
+        .imgBx{
+            img{ border: 10px solid $White; }
+        }
+        .vitorInfo{
+            h1{ color: $White; }
+            .textoVitor{ color: $White; }
+        }
     }
 }
