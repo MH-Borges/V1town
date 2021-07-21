@@ -105,29 +105,7 @@
         </div>
     </section>
 
-    <script>
-        $(".theme-switch").on("click", () => {
-            $("body").toggleClass("light-theme");
-            var dark = $("#dark").text();
-            if (dark.trim() === 'Dark Mode') {
-                light = '<span id="lightIn">Light Mode<span>';  
-                $("#darkIn").remove();
-                $("#light").append(light);
-            }
-            if (dark.trim() === 'Light Mode') {
-                DarkIn = '<span id="darkIn">Dark Mode<span>';  
-                $("#lightIn").remove();
-                $("#dark").append(DarkIn);
-            }
-        });
-
-        $("#activelogo").on("click", () => {
-            $(".Menu").toggleClass("actived");
-            $(".content").toggleClass("actived");
-            $(".iconFts").toggleClass("actived");  
-        });
-
-    </script>
+    <script src="js/JqueryAPP.js"></script>
 
 </body>
 </html>

@@ -8,6 +8,7 @@
     border-right: 1px $Black solid;
     padding: 1.5vw 2vw;
     transition: 0.5s ease-in-out;
+    z-index: 1;
     .BxLogos{
         display: flex;
         .Logo{

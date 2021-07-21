@@ -3,7 +3,7 @@
     padding: 3vw;
     width: 100%;
     .imgBx{
-        width: 45%;
+        width: 40%;
         display: flex;
         align-items: center;
         img{
@@ -12,7 +12,7 @@
         }
     }
     .vitorInfo{
-        width: 55%;
+        width: 60%;
         padding: 2vw 2vw 2vw 4vw;
         font-family: 'Redonda';
         display: flex;
@@ -21,17 +21,17 @@
         h1{
             width: 100%;
             color: $Black;
-            font-size: 2.5vw;
+            font-size: 2.8vw;
             font-weight: 700;
         }
         .textoVitor{
             padding:0.5vw 5vw 1vw 0;
-            font-weight: 300;
-            font-size: 0.9vw;
+            font-weight: 100;
+            font-size: 1vw;
             color: $Black;
             #lastF{
                 font-weight: 700;
-                font-size: 1vw;
+                font-size: 1.1vw;
             }
         }
     }
