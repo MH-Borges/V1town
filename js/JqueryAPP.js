@@ -19,6 +19,10 @@ $("#activelogo").on("click", () => {
     $(".iconFts").toggleClass("actived");  
 });
 
+$(".Links").on("click", () => {
+    $(".Links").toggleClass("linksPhone");  
+});
+
 $(".iconFts").on("click", () => {
     var getClass = $('.iconsFT').attr('class');
     if (getClass === 'iconsFT') {

@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
         opacity: 0,
         delay: 2.2,
     })
-    .from(".Logo, .Menu", { 
+    .from(".Logo, .Menu, .content", { 
         opacity: 0, 
         y: 50,
     },"-=1")
-    .to(".Logo, .Menu", {
+    .to(".Logo, .Menu, .content", {
         duration: 1, 
         opacity: 1, 
         y: 0,

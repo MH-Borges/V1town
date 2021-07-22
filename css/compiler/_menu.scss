@@ -105,3 +105,148 @@
     }
     .Links{ span{ font-size: 1vw; padding-right: 0.5vw; transition: 0.5s ease-in-out; } }
 }
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+}
+
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px){
+    .Menu{
+        width: 100vw;
+        height: auto;
+        margin-top: 0;
+        border-right: none;
+        border-bottom: 1px $Black solid;
+        padding: 3vw 3vw 2vw 3vw;
+        background-color: $White;
+        display: flex;
+        flex-wrap: wrap;
+        .BxLogos{
+            width: 100%;
+            .Logo{
+                width: 14%;
+                svg{
+                    path{
+                        fill: $Black;
+                    }
+                }
+            }
+            .LongLogo{ 
+                display: flex; 
+                width: 28%;
+                transition: 0.5s ease-in-out;
+            }
+        }
+        .About{
+            margin: 7vw 0 0 0;
+            transition: 0.5s ease-in-out;
+            a{
+                font-size: 3.5vw;
+                margin: 0;
+            }
+            p{
+                display: none;
+            }
+        }
+        .Links{
+            width: auto;
+            margin: 7vw 0 0 auto;
+            display: flex;
+            position: relative;
+            align-items: center;
+            transition: 0.5s ease-in-out;
+            span{
+                font-size: 2.5vw;
+            }
+            .link{
+                display: none;
+            }
+        }
+        .linksPhone{
+            .phoneLink{
+                position: absolute;
+                border: 1px solid rgb(221, 221, 221);
+                top: 4.5vw;
+                right: 0;
+                padding: 1vw;
+                border-radius: 1vw;
+                background-color: $White;
+                z-index: 2 !important;
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+                .link{
+                    display: flex;
+                    width: 100%;
+                    a{
+                        font-size: 3vw;
+                        color: $Orange;
+                    }
+                }
+            }
+        }
+        h3{
+            bottom: -5vw;
+            left: auto;
+            right: 2vw;
+            font-size: 1.5vw;
+            z-index: -1;
+        }
+        .theme-switch {
+            width: 8vw;
+            height: 3.5vw;
+            bottom: -7.5vw;
+            left: auto;
+            right: 2.5vw;
+            border: $Black 0.2vw solid;
+            z-index: -1;
+            .switch {
+                width: 2.5vw;
+                height: 2.5vw;
+                top: 0.25vw;
+                left: 0.4vw;
+            }
+        }
+    }
+    .Menu.actived{
+        width: 100vw;
+        height: auto;
+        .BxLogos{
+            display: flex;
+            .Logo{ width: 14%; }
+            .LongLogo{ 
+                display: flex; 
+                width: 20%;
+                transition: 0.5s ease-in-out;
+            }
+        }
+        .About{
+            margin: 2vw 0 0 0;
+            transition: 0.5s ease-in-out;
+            a{
+                font-size: 3.5vw;
+                margin: 0;
+            }
+            p{
+                display: none;
+            }
+        }
+        .Links{
+            width: auto;
+            margin: 2vw 0 0 auto;
+            display: flex;
+            position: relative;
+            align-items: center;
+            transition: 0.5s ease-in-out;
+            span{
+                font-size: 2.5vw;
+                padding: 0;
+            }
+            .link{
+                display: none;
+            }
+        }
+    }
+}
