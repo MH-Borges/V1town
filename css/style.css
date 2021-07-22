@@ -104,7 +104,7 @@ img, svg {
 }
 
 .none {
-  display: none;
+  display: none !important;
 }
 
 .orange {
@@ -455,12 +455,11 @@ img, svg {
 }
 
 .content .MenuInside {
-  width: 20%;
+  width: 18%;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: fixed;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -471,6 +470,7 @@ img, svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: fixed;
 }
 
 .content .MenuInside .MenuSd {
@@ -484,6 +484,46 @@ img, svg {
 
 .content .MenuInside .active {
   color: #FF6D00;
+}
+
+.content .MenuInside .iconFts {
+  position: fixed;
+  top: 87vh;
+  left: 7.5vw;
+  width: 3.5vw;
+  height: 3.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.content .MenuInside .iconFts .iconsFT {
+  background: #0C0C0C;
+  width: 32.3%;
+  height: 47.8%;
+}
+
+.content .MenuInside .iconFts .metade {
+  width: 49% !important;
+}
+
+.content .MenuInside .iconFts .cem {
+  width: 100% !important;
+  height: 100%;
+}
+
+.content .MenuInside .iconFts.actived {
+  left: 23.5vw;
 }
 
 .content .TabsBx {
@@ -612,46 +652,6 @@ img, svg {
 #Foto {
   width: 100%;
   position: relative;
-}
-
-#Foto .iconFts {
-  position: fixed;
-  top: 87vh;
-  left: -9vw;
-  width: 3.5vw;
-  height: 3.5vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-
-#Foto .iconFts .iconsFT {
-  background: #0C0C0C;
-  width: 32.3%;
-  height: 47.8%;
-}
-
-#Foto .iconFts .metade {
-  width: 49% !important;
-}
-
-#Foto .iconFts .cem {
-  width: 100% !important;
-  height: 100%;
-}
-
-#Foto .iconFts.actived {
-  left: 23.5vw;
 }
 
 #Foto .blockfts {

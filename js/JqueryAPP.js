@@ -99,6 +99,15 @@ $("#slider").on("input",function () {
     $('#testAbelha').css("font-size", $(this).val() + "px");
 });
 
+$(".MenuSd").on("click", () => {
+    if(fts === 'tab-pane fade show active'){
+        $(".iconFts").removeClass("none"); 
+    }
+    else{
+        $(".iconFts").addClass("none");
+    }
+});
+
 $(document).ready(()=> {
     $(".TradicionalFt").mouseenter(()=> {
         $('.Tradicional').addClass("none");

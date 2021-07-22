@@ -7,13 +7,13 @@
     transition: 0.5s ease-in-out;
     margin-right: 0.7vw;
     .MenuInside{
-        width: 20%;
+        width: 18%;
         height: 100vh;
         display: flex;
-        position: fixed;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: fixed;
         .MenuSd{
             color: $Black;
             padding: 1.2vw;
@@ -24,6 +24,34 @@
         }
         .active{
             color: $Orange;
+        }
+
+        .iconFts{
+            position: fixed;
+            top: 87vh;
+            left: 7.5vw;
+            width: 3.5vw;
+            height: 3.5vw;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            transition: 0.5s ease-in-out;
+            .iconsFT{
+                background: $Black;
+                width: 32.3%;
+                height: 47.8%;
+            }
+            .metade{
+                width: 49% !important;
+            }
+            .cem{
+                width: 100% !important;
+                height: 100%;
+            }
+        }
+        .iconFts.actived{
+            left: 23.5vw;
         }
     }
     .TabsBx{

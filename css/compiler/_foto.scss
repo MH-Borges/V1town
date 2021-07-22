@@ -1,33 +1,6 @@
 #Foto{
     width: 100%;
     position: relative;
-    .iconFts{
-        position: fixed;
-        top: 87vh;
-        left: -9vw;
-        width: 3.5vw;
-        height: 3.5vw;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        transition: 0.5s ease-in-out;
-        .iconsFT{
-            background: $Black;
-            width: 32.3%;
-            height: 47.8%;
-        }
-        .metade{
-            width: 49% !important;
-        }
-        .cem{
-            width: 100% !important;
-            height: 100%;
-        }
-    }
-    .iconFts.actived{
-        left: 23.5vw;
-    }
     .blockfts{
         width: 100%;
         display: flex;

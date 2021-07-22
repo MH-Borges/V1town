@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
         opacity: 0,
         delay: 2.2,
     })
-    .from(".Logo, .Menu, .content", { 
+    .from(".Logo, .Menu", { 
         opacity: 0, 
         y: 50,
     },"-=1")
-    .to(".Logo, .Menu, .content", {
+    .to(".Logo, .Menu", {
         duration: 1, 
         opacity: 1, 
         y: 0,
@@ -24,11 +24,11 @@ document.addEventListener("DOMContentLoaded", () => {
         opacity: 1, 
         y: 0,
     })
-    .from(".About", {
+    .from(".About, .TabsBx", {
         opacity: 0, 
         y: 50,
     }, "-=1.5")
-    .to(".About",{ 
+    .to(".About, .TabsBx",{ 
         opacity: 1,
         duration: 1,
         y: 0,
@@ -42,11 +42,11 @@ document.addEventListener("DOMContentLoaded", () => {
         duration: 1,
         y: 0,
     })
-    .from(".Links, .TabsBx", {
+    .from(".Links", {
         opacity: 0, 
         y: 50,
     }, "-=3")
-    .to(".Links, .TabsBx",{ 
+    .to(".Links",{ 
         opacity: 1,
         duration: 1,
         y: 0,
