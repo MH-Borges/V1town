@@ -188,23 +188,23 @@
             }
         }
         h3{
-            bottom: -5vw;
+            bottom: -6vw;
             left: auto;
             right: 2vw;
-            font-size: 1.5vw;
+            font-size: 2.5vw;
             z-index: -1;
         }
         .theme-switch {
-            width: 8vw;
-            height: 3.5vw;
-            bottom: -7.5vw;
+            width: 12vw;
+            height: 5vw;
+            bottom: -9.5vw;
             left: auto;
             right: 2.5vw;
             border: $Black 0.2vw solid;
             z-index: -1;
             .switch {
-                width: 2.5vw;
-                height: 2.5vw;
+                width: 4vw;
+                height: 4vw;
                 top: 0.25vw;
                 left: 0.4vw;
             }

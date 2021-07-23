@@ -366,24 +366,24 @@ img, svg {
     color: #FF6D00;
   }
   .Menu h3 {
-    bottom: -5vw;
+    bottom: -6vw;
     left: auto;
     right: 2vw;
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     z-index: -1;
   }
   .Menu .theme-switch {
-    width: 8vw;
-    height: 3.5vw;
-    bottom: -7.5vw;
+    width: 12vw;
+    height: 5vw;
+    bottom: -9.5vw;
     left: auto;
     right: 2.5vw;
     border: #0C0C0C 0.2vw solid;
     z-index: -1;
   }
   .Menu .theme-switch .switch {
-    width: 2.5vw;
-    height: 2.5vw;
+    width: 4vw;
+    height: 4vw;
     top: 0.25vw;
     left: 0.4vw;
   }
@@ -567,8 +567,8 @@ img, svg {
     font-size: 3vw;
   }
   .content .MenuInside .iconFts {
-    top: 27vw;
-    left: 7.5vw;
+    top: 1vw;
+    left: 5vw;
     width: 7vw;
     height: 7vw;
   }
@@ -1430,7 +1430,7 @@ img, svg {
 /* Wide Mobile = 480px */
 @media only screen and (max-width: 767px) {
   .vitorBx {
-    margin-top: 2vw;
+    margin-top: 5vw;
     padding: 5vw;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1893,8 +1893,8 @@ img, svg {
     border: #FFFFFF 0.2vw solid;
   }
   .light-theme .Menu .theme-switch .switch {
-    -webkit-transform: translateX(4.3vw);
-            transform: translateX(4.3vw);
+    -webkit-transform: translateX(6.3vw);
+            transform: translateX(6.3vw);
   }
 }
 /*# sourceMappingURL=style.css.map */
