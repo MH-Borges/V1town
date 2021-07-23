@@ -554,7 +554,7 @@ img, svg {
   }
   .content .MenuInside {
     width: 100%;
-    height: 15vw;
+    height: 17vw;
     position: relative;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -563,8 +563,8 @@ img, svg {
     padding: 0 15vw;
   }
   .content .MenuInside .MenuSd {
-    padding: 1.5vw;
-    font-size: 2.7vw;
+    padding: 2vw 1.5vw;
+    font-size: 3vw;
   }
   .content .MenuInside .iconFts {
     top: 27vw;
