@@ -36,3 +36,44 @@
         }
     }
 }
+
+/* Medium Device = 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+}
+
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px){ 
+    .vitorBx{
+        margin-top: 2vw;
+        padding: 5vw;
+        flex-wrap: wrap;
+        .imgBx{
+            width: 100%;
+            img{
+                padding: 3vw;
+                border: 2vw solid $Black;
+            }
+        }
+        .vitorInfo{
+            width: 100%;
+            padding: 5vw 2vw 2vw 2vw;
+            text-align: center;
+            h1{
+                width: 100%;
+                font-size: 4.5vw;
+            }
+            .textoVitor{
+                padding: 2vw 0;
+                font-size: 3vw;
+                #lastF{
+                    margin-top: 5vw;
+                    font-size: 3.5vw;
+                }
+            }
+        }
+    }
+}

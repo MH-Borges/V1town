@@ -145,7 +145,8 @@ img,svg{
             span{ color: $Blue; } } 
         } 
     }
-    #sketch{ 
+    #sketch{
+        h3{ color: $White; }
         .BlockSketch{ 
             h2{ color: $White; } 
             .SketchBx{ background-color: $White; } 

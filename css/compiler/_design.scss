@@ -55,3 +55,43 @@
         }
     }
 }
+
+/* Medium Device = 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+}
+
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px){ 
+    #Design{
+        width: 100%;
+        #BlockCarousel{
+            height: 55vw;
+            border-radius: 2.1vw;
+            .carousel-indicators{
+                li{
+                    width: 1.5vw;
+                    height: 1.5vw;
+                    margin: 0 0.5vw;
+                }
+            }
+            .carousel-inner{
+                border-radius: 2vw;
+            }
+            .controls{
+                width: 5.5vw;
+                margin: 0 2vw;
+                span{
+                    width: 4.5vw;
+                }
+            }
+        }
+        h2{
+            font-size: 3vw;
+            margin: 2vw 2vw 5vw 2.5vw;
+        }
+    }
+}

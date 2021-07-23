@@ -25,7 +25,6 @@
         .active{
             color: $Orange;
         }
-
         .iconFts{
             position: fixed;
             top: 87vh;
@@ -90,14 +89,33 @@
                 padding: 1.5vw;
                 font-size: 2.7vw;
             }
+            .iconFts{
+                top: 27vw;
+                left: 7.5vw;
+                width: 7vw;
+                height: 7vw;
+                .iconsFT{
+                    width: 31.5%;
+                    height: 47.8%;
+                }
+                .cem{
+                    width: 100% !important;
+                    height: 100%;
+                }
+            }
+            .iconFts.actived{
+                left: 7.5vw;
+                top: 20vw;
+            }
         }
         .TabsBx{
             width: 100%;
             margin-left: 0;
+            height: 100%;
         }
     }
     .content.actived{
-        margin-left: 0;
+        margin: 20vw 0 0 0;
         width: 100vw;  
     }
 }

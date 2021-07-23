@@ -566,12 +566,31 @@ img, svg {
     padding: 1.5vw;
     font-size: 2.7vw;
   }
+  .content .MenuInside .iconFts {
+    top: 27vw;
+    left: 7.5vw;
+    width: 7vw;
+    height: 7vw;
+  }
+  .content .MenuInside .iconFts .iconsFT {
+    width: 31.5%;
+    height: 47.8%;
+  }
+  .content .MenuInside .iconFts .cem {
+    width: 100% !important;
+    height: 100%;
+  }
+  .content .MenuInside .iconFts.actived {
+    left: 7.5vw;
+    top: 20vw;
+  }
   .content .TabsBx {
     width: 100%;
     margin-left: 0;
+    height: 100%;
   }
   .content.actived {
-    margin-left: 0;
+    margin: 20vw 0 0 0;
     width: 100vw;
   }
 }
@@ -649,6 +668,38 @@ img, svg {
   color: #FF6D00;
 }
 
+/* Medium Device = 1200px */
+/* Tablet Device = 768px */
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px) {
+  #Design {
+    width: 100%;
+  }
+  #Design #BlockCarousel {
+    height: 55vw;
+    border-radius: 2.1vw;
+  }
+  #Design #BlockCarousel .carousel-indicators li {
+    width: 1.5vw;
+    height: 1.5vw;
+    margin: 0 0.5vw;
+  }
+  #Design #BlockCarousel .carousel-inner {
+    border-radius: 2vw;
+  }
+  #Design #BlockCarousel .controls {
+    width: 5.5vw;
+    margin: 0 2vw;
+  }
+  #Design #BlockCarousel .controls span {
+    width: 4.5vw;
+  }
+  #Design h2 {
+    font-size: 3vw;
+    margin: 2vw 2vw 5vw 2.5vw;
+  }
+}
+
 #Foto {
   width: 100%;
   position: relative;
@@ -682,7 +733,7 @@ img, svg {
   height: 30vh;
   background: #0C0C0C;
   border-radius: 1vw;
-  margin: 0 0 2vw 0;
+  margin: 0 0 0.7vw 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -692,7 +743,6 @@ img, svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 0.7vw;
 }
 
 #Foto .blockfts .FotoBx img {
@@ -703,10 +753,6 @@ img, svg {
   border-radius: 1vw;
 }
 
-#Foto .blockfts .none {
-  display: none;
-}
-
 #Foto .blockfts .metade {
   width: 49.5%;
   height: 50vh;
@@ -715,6 +761,33 @@ img, svg {
 #Foto .blockfts .cem {
   width: 98.5%;
   height: auto;
+}
+
+/* Medium Device = 1200px */
+/* Tablet Device = 768px */
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px) {
+  #Foto .blockfts h2 {
+    font-size: 3.5vw;
+    margin: 3vw 0 1vw -1vw;
+  }
+  #Foto .blockfts .FotoBx {
+    width: 32%;
+    height: 30vw;
+    border-radius: 2vw;
+    margin: 0 0 2vw 0;
+  }
+  #Foto .blockfts .FotoBx img {
+    border-radius: 2vw;
+  }
+  #Foto .blockfts .metade {
+    width: 49%;
+    height: 50vw;
+  }
+  #Foto .blockfts .cem {
+    width: 98%;
+    height: auto;
+  }
 }
 
 #Tipogr {
@@ -947,8 +1020,110 @@ img, svg {
   color: #FF6D00;
 }
 
+/* Medium Device = 1200px */
+/* Tablet Device = 768px */
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px) {
+  #Tipogr .FeaturesFont {
+    padding: 2vw 0 4vw 0;
+  }
+  #Tipogr .FeaturesFont select {
+    background-position-x: 100%;
+    background-position-y: 0.5vw;
+    padding: 0.8vw 4vw 0 0.8vw;
+    font-size: 4vw;
+  }
+  #Tipogr .FeaturesFont input[type=range] {
+    margin-left: auto;
+    width: 25vw;
+    margin-right: 2vw;
+  }
+  #Tipogr .FeaturesFont input[type=range]::-webkit-slider-runnable-track {
+    height: 1vw;
+  }
+  #Tipogr .FeaturesFont input[type=range]::-webkit-slider-thumb {
+    height: 3vw;
+    width: 3vw;
+    margin-top: -1vw;
+  }
+  #Tipogr .abelhaNlinks {
+    margin-bottom: 3vw;
+  }
+  #Tipogr .abelhaNlinks h2 {
+    font-size: 7vw;
+  }
+  #Tipogr .abelhaNlinks .abelhalinks ul a {
+    padding: 1vw;
+    margin: 0 1vw 0 0;
+    font-size: 3vw;
+  }
+  #Tipogr .divider {
+    border: 0.1vw solid #0C0C0C;
+    margin: 2.5vw 0;
+  }
+  #Tipogr .features h3 {
+    font-size: 5vw;
+    line-height: 4.5vw;
+  }
+  #Tipogr .features .BxFeatures {
+    width: 100%;
+    margin: 4vw 0;
+    padding: 1.5vw;
+  }
+  #Tipogr .features .BxFeatures span {
+    width: 30%;
+    font-size: 3vw;
+    line-height: 3vw;
+    padding-right: 2vw;
+  }
+  #Tipogr .features .BxFeatures .changeFT {
+    height: auto;
+  }
+  #Tipogr .features .BxFeatures .changeFT svg {
+    width: 85%;
+  }
+  #Tipogr .features .BxFeatures .bigboi {
+    height: auto;
+  }
+  #Tipogr .PosterBx {
+    margin-bottom: 4vw;
+  }
+  #Tipogr .PosterBx h3 {
+    font-size: 4vw;
+    margin: 1vw 0 3vw 0;
+  }
+  #Tipogr .PosterBx .Poster {
+    width: 100%;
+    height: 80vw;
+    border-radius: 2vw;
+    margin: 1vw 0 12vw 0;
+  }
+  #Tipogr .PosterBx .Poster img {
+    border-radius: 2vw;
+  }
+  #Tipogr .PosterBx .Poster span {
+    padding: 1vw;
+    font-size: 3vw;
+  }
+}
+
 #sketch {
   width: 100%;
+}
+
+#sketch h3 {
+  width: 100%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #0C0C0C;
 }
 
 #sketch .BlockSketch {
@@ -990,6 +1165,34 @@ img, svg {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1vw;
+}
+
+/* Medium Device = 1200px */
+/* Tablet Device = 768px */
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px) {
+  #sketch {
+    width: 100%;
+  }
+  #sketch h3 {
+    font-size: 6vw;
+  }
+  #sketch .BlockSketch {
+    padding: 1.5vw;
+  }
+  #sketch .BlockSketch h2 {
+    font-size: 4vw;
+    margin: 1vw 0;
+  }
+  #sketch .BlockSketch .SketchBx {
+    border-radius: 2vw;
+    height: 50vw;
+    width: 49.5%;
+    margin: 1.5vw 0;
+  }
+  #sketch .BlockSketch .SketchBx img {
+    border-radius: 2vw;
+  }
 }
 
 #Studio {
@@ -1052,6 +1255,39 @@ img, svg {
   font-weight: 300;
 }
 
+/* Medium Device = 1200px */
+/* Tablet Device = 768px */
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px) {
+  #Studio {
+    padding: 2vw 0 0 0;
+  }
+  #Studio svg {
+    padding: 1vw 8vw;
+  }
+  #Studio h4 {
+    font-size: 2.5vw;
+    margin: 1vw 0 3vw 0;
+  }
+  #Studio .StudioJobs {
+    padding: 1vw;
+  }
+  #Studio .StudioJobs .BxStudio {
+    width: 100%;
+    margin: 8vw 0 3vw 0;
+  }
+  #Studio .StudioJobs .BxStudio span {
+    width: 30%;
+    font-size: 3vw;
+    line-height: 3.5vw;
+  }
+  #Studio .StudioJobs .BxStudio .textStudio {
+    width: 70%;
+    padding: 0.5vw 3vw 0 1vw;
+    font-size: 3vw;
+  }
+}
+
 #contato {
   width: 100%;
 }
@@ -1100,6 +1336,35 @@ img, svg {
   text-decoration: none;
   margin: 0.5vw 0 0 0;
   font-weight: 700;
+}
+
+/* Medium Device = 1200px */
+/* Tablet Device = 768px */
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px) {
+  #contato .BxContato {
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    padding: 5vw 2vw 2vw 2vw;
+  }
+  #contato .BxContato .Linkscontato {
+    width: 100%;
+    height: 40vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #contato .BxContato .Linkscontato h4 {
+    width: 100%;
+    font-size: 5vw;
+    text-align: center;
+  }
+  #contato .BxContato .Linkscontato a {
+    padding: 1vw 2.5vw;
+    border-radius: 5vw;
+    font-size: 5vw;
+    margin: 2vw 0 0 0;
+  }
 }
 
 .vitorBx {
@@ -1158,6 +1423,42 @@ img, svg {
 .vitorBx .vitorInfo .textoVitor #lastF {
   font-weight: 700;
   font-size: 1.1vw;
+}
+
+/* Medium Device = 1200px */
+/* Tablet Device = 768px */
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px) {
+  .vitorBx {
+    margin-top: 2vw;
+    padding: 5vw;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .vitorBx .imgBx {
+    width: 100%;
+  }
+  .vitorBx .imgBx img {
+    padding: 3vw;
+    border: 2vw solid #0C0C0C;
+  }
+  .vitorBx .vitorInfo {
+    width: 100%;
+    padding: 5vw 2vw 2vw 2vw;
+    text-align: center;
+  }
+  .vitorBx .vitorInfo h1 {
+    width: 100%;
+    font-size: 4.5vw;
+  }
+  .vitorBx .vitorInfo .textoVitor {
+    padding: 2vw 0;
+    font-size: 3vw;
+  }
+  .vitorBx .vitorInfo .textoVitor #lastF {
+    margin-top: 5vw;
+    font-size: 3.5vw;
+  }
 }
 
 .ProjectBx {
@@ -1259,6 +1560,52 @@ img, svg {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 1vw;
+}
+
+/* Medium Device = 1200px */
+/* Tablet Device = 768px */
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px) {
+  .ProjectBx {
+    padding: 1vw 5vw 4vw 5vw;
+    margin-top: -10vw;
+  }
+  .ProjectBx h3 {
+    font-size: 6vw;
+  }
+  .ProjectBx .projectGrid span {
+    width: 20%;
+    font-size: 3vw;
+  }
+  .ProjectBx .projectGrid .project {
+    width: 80%;
+    padding: 0.5vw 5vw 0.5vw 1vw;
+  }
+  .ProjectBx .projectGrid .project p {
+    font-size: 3vw;
+  }
+  .ProjectBx .dones .project {
+    padding: 0.5vw 5vw 0.5vw 1vw;
+  }
+  .ProjectBx .dones .project p {
+    font-size: 3vw;
+  }
+  .ProjectBx .Equipe .project {
+    padding: 0.5vw 3vw 0.5vw 1vw;
+  }
+  .ProjectBx .Equipe .project p {
+    font-size: 3vw;
+  }
+  .ProjectBx .Equipe .project p a {
+    margin-left: 1vw;
+  }
+  .ProjectBx .BxImgs .ItemBX {
+    margin: 2vw 0;
+    border-radius: 2vw;
+  }
+  .ProjectBx .BxImgs .ItemBX img {
+    border-radius: 2vw;
+  }
 }
 
 .screen-loading {
@@ -1465,6 +1812,10 @@ img, svg {
 
 .light-theme #Tipogr .PosterBx .Poster span {
   color: #0584FF;
+}
+
+.light-theme #sketch h3 {
+  color: #FFFFFF;
 }
 
 .light-theme #sketch .BlockSketch h2 {

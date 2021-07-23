@@ -99,15 +99,6 @@ $("#slider").on("input",function () {
     $('#testAbelha').css("font-size", $(this).val() + "px");
 });
 
-$(".MenuSd").on("click", () => {
-    if(fts === 'tab-pane fade show active'){
-        $(".iconFts").removeClass("none"); 
-    }
-    else{
-        $(".iconFts").addClass("none");
-    }
-});
-
 $(document).ready(()=> {
     $(".TradicionalFt").mouseenter(()=> {
         $('.Tradicional').addClass("none");
@@ -143,5 +134,13 @@ $(document).ready(()=> {
     .mouseleave(()=> {
         $('.Setas').removeClass("none");
         $('.SetasOn').addClass("none");
+    });
+
+    $(".MenuSd").on("click", () => {
+        $(".iconFts").addClass("none");
+    });
+
+    $("#FotoBt").on("click", () => {
+        $(".iconFts").removeClass("none"); 
     });
 });

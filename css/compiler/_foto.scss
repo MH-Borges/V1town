@@ -19,20 +19,16 @@
             height: 30vh;
             background: $Black;
             border-radius: 1vw;
-            margin: 0 0 2vw 0;
+            margin: 0 0 0.7vw 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 0.7vw;
             img{
                 height: 100%;
                 width: 100%;
                 object-fit: cover;
                 border-radius: 1vw;
             }
-        }
-        .none{
-            display: none;
         }
         .metade{
             width: 49.5%;
@@ -41,6 +37,43 @@
         .cem{
             width: 98.5%;
             height: auto;
+        }
+    }
+}
+
+/* Medium Device = 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+}
+
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px){ 
+    #Foto{
+        .blockfts{
+            h2{
+                font-size: 3.5vw;
+                margin: 3vw 0 1vw -1vw;
+            }
+            .FotoBx{
+                width: 32%;
+                height: 30vw;
+                border-radius: 2vw;
+                margin: 0 0 2vw 0;
+                img{
+                    border-radius: 2vw;
+                }
+            }
+            .metade{
+                width: 49%;
+                height: 50vw;
+            }
+            .cem{
+                width: 98%;
+                height: auto;
+            }
         }
     }
 }

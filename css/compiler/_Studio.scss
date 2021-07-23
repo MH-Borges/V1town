@@ -43,3 +43,42 @@
         }
     }
 }
+
+/* Medium Device = 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Tablet Device = 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+}
+
+/* Wide Mobile = 480px */
+@media only screen and (max-width: 767px){ 
+    #Studio{
+        padding: 2vw 0 0 0;
+        svg{
+            padding: 1vw 8vw;
+        }
+        h4{
+            font-size: 2.5vw;
+            margin: 1vw 0 3vw 0;
+        }
+        .StudioJobs{
+            padding: 1vw;
+            .BxStudio{
+                width: 100%;
+                margin: 8vw 0 3vw 0;
+                span{
+                    width: 30%;
+                    font-size: 3vw;
+                    line-height: 3.5vw;
+                }
+                .textStudio{
+                    width: 70%;
+                    padding: 0.5vw 3vw 0 1vw;
+                    font-size: 3vw;
+                }
+            }
+        }
+    } 
+}
