@@ -113,13 +113,13 @@ img,svg{
         .MenuInside{
             .MenuSd{ color: $White; }
             .active{ color: $Blue; }
+            .iconFts{ .iconsFT{ background: $White; } }
         }
     }
     #Design{ 
         h2{ a{color: $White; &:hover{ color: $Blue; } } }
     }
     #Foto{ 
-        .iconFts{ .iconsFT{ background: $White; } }
         .blockfts{ h2{ color: $White; } .FotoBx{ background: $White; } }
     }
     #Tipogr{
@@ -155,6 +155,7 @@ img,svg{
     #Studio{
         svg{ fill: $White; }
         h4{ color: $White; }
+        h5{ color: $White; }
         .StudioJobs{ .BxStudio{ span{ color: $Blue; } .textStudio{ color: $White; } } }
     }
     #contato{ 

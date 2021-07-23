@@ -42,6 +42,15 @@
             }
         }
     }
+    h5{
+        text-align: center;
+        width: 100%;
+        font-family: 'Redonda';
+        font-weight: 300;
+        font-size: 0.9vw;
+        margin: 1vw 0 3vw 0;
+        color: $Black;
+    }
 }
 
 /* Medium Device = 1200px */
@@ -79,6 +88,10 @@
                     font-size: 3vw;
                 }
             }
+        }
+        h5{
+            font-size: 3vw;
+            margin: 3vw 0;
         }
     } 
 }

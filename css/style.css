@@ -1124,6 +1124,7 @@ img, svg {
       -ms-flex-pack: center;
           justify-content: center;
   color: #0C0C0C;
+  text-transform: uppercase;
 }
 
 #sketch .BlockSketch {
@@ -1255,6 +1256,16 @@ img, svg {
   font-weight: 300;
 }
 
+#Studio h5 {
+  text-align: center;
+  width: 100%;
+  font-family: 'Redonda';
+  font-weight: 300;
+  font-size: 0.9vw;
+  margin: 1vw 0 3vw 0;
+  color: #0C0C0C;
+}
+
 /* Medium Device = 1200px */
 /* Tablet Device = 768px */
 /* Wide Mobile = 480px */
@@ -1285,6 +1296,10 @@ img, svg {
     width: 70%;
     padding: 0.5vw 3vw 0 1vw;
     font-size: 3vw;
+  }
+  #Studio h5 {
+    font-size: 3vw;
+    margin: 3vw 0;
   }
 }
 
@@ -1741,16 +1756,16 @@ img, svg {
   color: #0584FF;
 }
 
+.light-theme .content .MenuInside .iconFts .iconsFT {
+  background: #FFFFFF;
+}
+
 .light-theme #Design h2 a {
   color: #FFFFFF;
 }
 
 .light-theme #Design h2 a:hover {
   color: #0584FF;
-}
-
-.light-theme #Foto .iconFts .iconsFT {
-  background: #FFFFFF;
 }
 
 .light-theme #Foto .blockfts h2 {
@@ -1831,6 +1846,10 @@ img, svg {
 }
 
 .light-theme #Studio h4 {
+  color: #FFFFFF;
+}
+
+.light-theme #Studio h5 {
   color: #FFFFFF;
 }
 
