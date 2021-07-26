@@ -15,8 +15,7 @@ $(".theme-switch").on("click", () => {
 
 $("#activelogo").on("click", () => {
     $(".Menu").toggleClass("actived");
-    $(".content").toggleClass("actived");
-    $(".iconFts").toggleClass("actived");  
+    $(".content").toggleClass("actived"); 
 });
 
 $(".Links").on("click", () => {

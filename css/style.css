@@ -522,10 +522,6 @@ img, svg {
   height: 100%;
 }
 
-.content .MenuInside .iconFts.actived {
-  left: 23.5vw;
-}
-
 .content .TabsBx {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1246,6 +1242,7 @@ img, svg {
   text-transform: uppercase;
   line-height: 1.2vw;
   padding: 0.5vw;
+  border-right: 0.1vw solid #0C0C0C;
 }
 
 #Studio .StudioJobs .BxStudio .textStudio {
