@@ -153,10 +153,36 @@ img,svg{
         } 
     }
     #Studio{
-        svg{ fill: $White; }
-        h4{ color: $White; }
+        svg{
+            fill: $White;
+        }
+        h4{
+            color: $White;
+        }
+        .linksStudio{
+            a{
+                color: $White;
+                &:hover{
+                    color: $Blue;
+                }
+            }
+            svg{
+                fill: $Blue;
+            }
+        }
+        .StudioJobs{
+            .BxStudio{
+                span{
+                    color: $Blue;
+                    border-right: 0.1vw solid $White;
+    
+                }
+                .textStudio{
+                    color: $White;
+                }
+            }
+        }
         h5{ color: $White; }
-        .StudioJobs{ .BxStudio{ span{ color: $Blue; } .textStudio{ color: $White; } } }
     }
     #contato{ 
         .BxContato{ .Linkscontato{ a{ background-color: $Blue; } } } 
