@@ -1,7 +1,7 @@
-$Blue:#0584FF;
-$Orange: #FF6D00;
-$Black: #0C0C0C;
-$White:#FFFFFF;
+$Blue:#2EB4FF;
+$Orange: #FF4500;
+$Black: #3A0000;
+$White:#EDFAC9;
 
 
 @font-face{
@@ -68,4 +68,10 @@ $White:#FFFFFF;
     font-family: "Abelha";
     font-weight: 300;
     src:url(../font/abelharegular.otf);
+}
+
+@font-face{
+    font-family: "Babaca";
+    font-weight: 300;
+    src:url(../font/BabacaGrotesca-Regular.ttf);
 }

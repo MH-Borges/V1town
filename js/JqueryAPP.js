@@ -80,8 +80,8 @@ $(".AbelhaTeste").on("click", () => {
     }
 });
 
-$("#type").on("click", () => {
-    var select = $("#type option:selected").val();
+$("#typeAbelha").on("click", () => {
+    var select = $("#typeAbelha option:selected").val();
     if(select === 'bold'){
         $("#testAbelha").removeClass("regular");
         $('#testAbelha').addClass("bold");
@@ -91,6 +91,15 @@ $("#type").on("click", () => {
         $("#testAbelha").removeClass("bold");
         $('#testAbelha').addClass("regular");
         $("#linkDownload").attr("href", "font/abelharegular.otf");
+    }
+});
+
+$("#typeBabaca").on("click", () => {
+    var select = $("#typeBabaca option:selected").val();
+    if(select === 'regular'){
+        $("#testBacaca").removeClass("bold");
+        $('#testBacaca').addClass("regular");
+        $("#linkDownload").attr("href", "font/BabacaGrotesca-Regular.ttf");
     }
 });
 

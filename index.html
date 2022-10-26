@@ -31,12 +31,6 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/svg-inject.min.js"></script>
 
-    <!-- Datatables 
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
-    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.tiny.cloud/1/01uhosbwsatq81mxwpnxld6f9r0yekrqdchl405mj6b76bsl/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-    <script> tinymce.init({ selector: '#editor', plugins: 'a11ychecker advcode casechange formatpainter linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tinycomments tinymcespellchecker', toolbar: 'a11ycheck addcomment showcomments casechange checklist code formatpainter pageembed permanentpen table', tinycomments_mode: 'embedded', });
-    </script> -->
 </head>
 
 <body>     
@@ -68,9 +62,6 @@
                     <a href="https://www.behance.net/vitorpego" target="_blank">Bēhance</a>
                 </li>
                 <li class="link">
-                    <a href="https://www.youtube.com/channel/UCzj5pARUjvH0LVCFT8s-dnw" target="_blank">Youtube</a>
-                </li>
-                <li class="link">
                     <a href="https://www.instagram.com/v1town" target="_blank">Instagram</a>
                 </li>
                 <li class="link">
@@ -96,7 +87,7 @@
             <a class="MenuSd active" data-toggle="pill" href="#Design" aria-selected="true">Design</a>
             <a class="MenuSd" id="FotoBt" data-toggle="pill" href="#Foto" aria-selected="false">Fotografia</a>
             <a class="MenuSd" data-toggle="pill" href="#Tipogr" aria-selected="false">Tipografia</a>
-            <a class="MenuSd" data-toggle="pill" href="#sketch" aria-selected="false">Produtos</a>
+            <a class="MenuSd" target="_blank" href="https://www.instagram.com/pepperitah">Pepperitah</a>
             <a class="MenuSd" data-toggle="pill" href="#Studio" aria-selected="false">Studio</a>
             <a class="MenuSd" data-toggle="pill" href="#contato" aria-selected="false">contato</a>
             
@@ -113,6 +104,37 @@
         <div class="tab-content TabsBx">
             <div class="tab-pane fade show active" id="Design">
                 <div class="carouselBx">
+                    <div id="BlockCarousel" class="carousel slide pep" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target=".pep" data-slide-to="0" class="active"></li>
+                            <li data-target=".pep" data-slide-to="1"></li>
+                            <li data-target=".pep" data-slide-to="2"></li>
+                            <li data-target=".pep" data-slide-to="3"></li>
+                        </ol>
+                        <a href="Pepperitah.html" class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/PEPPERITAH/pep01.jpg"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/PEPPERITAH/pep02.png"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/PEPPERITAH/pep04.png"/>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/PEPPERITAH/pep05.png"/>
+                            </div>
+                        </a>
+                        <a class="carousel-control-prev controls" href=".pep" role="button" data-slide="prev">
+                            <span aria-hidden="true"><img src="img/flecha.svg" onload="SVGInject(this)" /></span>
+                        </a>
+                        <a class="carousel-control-next controls" href=".pep" role="button" data-slide="next">
+                            <span aria-hidden="true"><img id="rotate" src="img/flecha.svg" onload="SVGInject(this)" /></span>
+                        </a>
+                    </div>
+                    <h2><a href="Pepperitah.html">PEPPERITAH . 2021- </a></h2>
+                </div>
+                <div class="carouselBx">
                     <div id="BlockCarousel" class="carousel slide belm" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target=".belm" data-slide-to="0" class="active"></li>
@@ -122,7 +144,7 @@
                             <li data-target=".belm" data-slide-to="4"></li>
                             <li data-target=".belm" data-slide-to="5"></li>
                         </ol>
-                        <a href="ProjetoPage.html" class="carousel-inner">
+                        <a href="Belmonth.html" class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="img/BELMONTH/3.belmgif.gif"/>
                             </div>
@@ -149,54 +171,14 @@
                             <span aria-hidden="true"><img id="rotate" src="img/flecha.svg" onload="SVGInject(this)" /></span>
                         </a>
                     </div>
-                    <h2><a href="ProjetoPage.html">BELMONTH . 2021</a></h2>
+                    <h2><a href="Belmonth.html">BELMONTH . 2021</a></h2>
                 </div>
-                <div class="carouselBx">
-                    <div id="BlockCarousel" class="carousel slide FtcomAmor" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target=".FtcomAmor" data-slide-to="0" class="active"></li>
-                            <li data-target=".FtcomAmor" data-slide-to="1"></li>
-                            <li data-target=".FtcomAmor" data-slide-to="2"></li>
-                        </ol>
-                        <a href="ProjetoPage.html" class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="img/FEITOS_COM_AMOR/1.jpg">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/FEITOS_COM_AMOR/cartão-feitoscomamor.png">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/FEITOS_COM_AMOR/sacola-feitoscomamor.png">
-                            </div>
-                        </a>
-                        <a class="carousel-control-prev controls" href=".FtcomAmor" role="button" data-slide="prev">
-                            <span aria-hidden="true"><img src="img/flecha.svg" onload="SVGInject(this)" /></span>
-                        </a>
-                        <a class="carousel-control-next controls" href=".FtcomAmor" role="button" data-slide="next">
-                            <span aria-hidden="true"><img id="rotate" src="img/flecha.svg" onload="SVGInject(this)" /></span>
-                        </a>
-                    </div>
-                    <h2><a href="ProjetoPage.html">Feitos com amor . 2020</a></h2>
-                </div>
+                
             </div>
             <div class="tab-pane fade" id="Foto">
+                
                 <div class="blockfts">
-                    <h2>1. Lia & Matheus</h2>
-                    <div class="FotoBx">
-                        <img src="img/lia_matheus/L&M_01.jpeg">
-                    </div>
-                    <div class="FotoBx">
-                        <img src="img/lia_matheus/L&M_02.jpeg">
-                    </div>
-                    <div class="FotoBx">
-                        <img src="img/lia_matheus/L&M_03.jpeg">
-                    </div>
-                    <div class="FotoBx hide none">
-                        <img src="img/lia_matheus/L&M_04.jpeg">
-                    </div>
-                </div>
-                <div class="blockfts">
-                    <h2>2. Leonardo</h2>
+                    <h2>1. Leonardo</h2>
                     <div class="FotoBx">
                         <img src="img/Leo/leo_01.jpg">
                     </div>
@@ -211,7 +193,7 @@
                     </div>
                 </div>
                 <div class="blockfts">
-                    <h2>3. Diandra</h2>
+                    <h2>2. Diandra</h2>
                     <div class="FotoBx">
                         <img src="img/Diandra/Diandra_01.jpg">
                     </div>
@@ -226,7 +208,7 @@
                     </div>
                 </div>
                 <div class="blockfts">
-                    <h2>4. Leo e Jhosefer</h2>
+                    <h2>3. Leo e Jhosefer</h2>
                     <div class="FotoBx">
                         <img src="img/Leo_e_Jhosefer/Leo_e_Jhosefer_01.jpg">
                     </div>
@@ -241,7 +223,7 @@
                     </div>
                 </div>
                 <div class="blockfts">
-                    <h2>5. Dan</h2>
+                    <h2>4. Dan</h2>
                     <div class="FotoBx">
                         <img src="img/dan/dan_01.jpg">
                     </div>
@@ -257,109 +239,88 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="Tipogr">
-                <div class="FeaturesFont">
-                    <select id="type">
-                        <option value="bold">Gorda</option>
-                        <option value="regular">Regular</option>
-                    </select>
-                    <input id="slider" type="range" min="35" max="300" value="0" step="1">
+                <div class="fonts">
+                    <div class="FeaturesFont">
+                        <select class="babaca" id="typeBabaca">
+                            <option value="regular">Regular</option>
+                        </select>
+                        <input id="slider" type="range" min="35" max="300" value="0" step="1">
+                    </div>
+                    <div class="abelhaNlinks">
+                        <h2 id="testBacaca" contenteditable=""><span id="Abelha"> Babaca Grotesca (WIP) </span></h2>
+                    </div>
+                    <div class="divider"></div>
                 </div>
-                <div class="abelhaNlinks">
-                    <h2 id="testAbelha" contenteditable=""><span id="Abelha"> Abelha </span></h2>
-                    <nav class="abelhalinks">
-                        <ul>
-                            <a class="AbelhaTeste"><li id="MudaTeste">Testar</li></a>
-                            <a href="https://www.behance.net/gallery/114952745/Abelha-my-first-geometric-sans-typeface" target="_blank"><li>Inspo</li></a>
-                            <a href="" target="_blank"><li>Specimen</li></a>
-                            <a id="linkDownload" href="font/abelhagorda.otf" target="_blank"><li>download</li></a>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="divider"></div>
-        
-                <div class="features">
-                    <h3>Uma fonte geométrica com inspiração em fontes humanistas</h3>
-                    <div class="ss01 BxFeatures">
-                        <span>ss01 Tradicional</span>
-                        <div class="changeFT TradicionalFt bigboi">
-                            <img class="Tradicional" src="img/tradicional.svg" onload="SVGInject(this)">
-                            <img class="TradicionalOn none" src="img/tradicionalOn.svg" onload="SVGInject(this)">
+                <div class="fonts">
+                    <div class="FeaturesFont">
+                        <select id="typeAbelha">
+                            <option value="bold">Gorda</option>
+                            <option value="regular">Regular</option>
+                        </select>
+                        <input id="slider" type="range" min="35" max="300" value="0" step="1">
+                    </div>
+                    <div class="abelhaNlinks">
+                        <h2 id="testAbelha" contenteditable=""><span id="Abelha"> Abelha </span></h2>
+                        <nav class="abelhalinks">
+                            <ul>
+                                <a class="AbelhaTeste"><li id="MudaTeste">Testar</li></a>
+                                <a href="https://www.behance.net/gallery/135971597/Abelha-typeface" target="_blank"><li>Inspo</li></a>
+                                <a href="" target="_blank"><li>Specimen</li></a>
+                                <a id="linkDownload" href="font/abelhagorda.otf" target="_blank"><li>download</li></a>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="features">
+                        <h3>Uma fonte geométrica com inspiração em fontes humanistas</h3>
+                        <div class="ss01 BxFeatures">
+                            <span>ss01 Tradicional</span>
+                            <div class="changeFT TradicionalFt bigboi">
+                                <img class="Tradicional" src="img/tradicional.svg" onload="SVGInject(this)">
+                                <img class="TradicionalOn none" src="img/tradicionalOn.svg" onload="SVGInject(this)">
+                            </div>
+                        </div>
+                        <div class="ss02 BxFeatures bigboi">
+                            <span>ss02 Decorativa</span>
+                            <div class="changeFT DecorativaFt">
+                                <img class="Decorativa" src="img/Decorativos.svg" onload="SVGInject(this)">
+                                <img class="DecorativaOn none" src="img/DecorativosOn.svg" onload="SVGInject(this)">
+                            </div>
+                        </div>
+                        <div class="liga BxFeatures">
+                            <span>Ligaturas</span>
+                            <div class="changeFT LigaturasFt">
+                                <img class="Ligaturas" src="img/Ligaturas.svg" onload="SVGInject(this)">
+                                <img class="LigaturasOn none" src="img/LigaturasOn.svg" onload="SVGInject(this)">
+                            </div>
+                        </div>
+                        <div class="seta BxFeatures">
+                            <span>Setas</span>
+                            <div class="changeFT SetasFt">
+                                <img class="Setas" src="img/Setas.svg" onload="SVGInject(this)">
+                                <img class="SetasOn none" src="img/SetasOn.svg" onload="SVGInject(this)">
+                            </div>
                         </div>
                     </div>
-                    <div class="ss02 BxFeatures bigboi">
-                        <span>ss02 Decorativa</span>
-                        <div class="changeFT DecorativaFt">
-                            <img class="Decorativa" src="img/Decorativos.svg" onload="SVGInject(this)">
-                            <img class="DecorativaOn none" src="img/DecorativosOn.svg" onload="SVGInject(this)">
+                    <div class="divider"></div>
+                    <div class="PosterBx">
+                        <h3>Posteres & Trabalhos usando Abelha</h3>
+                        <div class="Poster">
+                            <img src="img/abelhabeezinthetrap.jpg">
+                            <span>beez in da trap <br>(@v1town)</span>
                         </div>
-                    </div>
-                    <div class="liga BxFeatures">
-                        <span>Ligaturas</span>
-                        <div class="changeFT LigaturasFt">
-                            <img class="Ligaturas" src="img/Ligaturas.svg" onload="SVGInject(this)">
-                            <img class="LigaturasOn none" src="img/LigaturasOn.svg" onload="SVGInject(this)">
-                        </div>
-                    </div>
-                    <div class="seta BxFeatures">
-                        <span>Setas</span>
-                        <div class="changeFT SetasFt">
-                            <img class="Setas" src="img/Setas.svg" onload="SVGInject(this)">
-                            <img class="SetasOn none" src="img/SetasOn.svg" onload="SVGInject(this)">
+                        <div class="Poster">
+                            <img src="img/abelhanaoliteralsaas.jpg">
+                            <span>AbeLHA&@* <br> (@thuizera & @v1town)</span>
                         </div>
                     </div>
                 </div>
-        
-                <div class="divider"></div>
-        
-                <div class="PosterBx">
-                    <h3>Posteres & Trabalhos usando Abelha</h3>
-                    <div class="Poster">
-                        <img src="img/abelhabeezinthetrap.jpg">
-                        <span>beez in da trap <br>(@v1town)</span>
-                    </div>
-                    <div class="Poster">
-                        <img src="img/abelhanaoliteralsaas.jpg">
-                        <span>AbeLHA&@* <br> (@thuizera & @v1town)</span>
-                    </div>
-                </div>
+                
             </div>
-            <div class="tab-pane fade" id="sketch">
-                 <h3>Em Breve</h3>
-                <!--
-                <div class="BlockSketch">
-                    <h2>CARTAZES MALBOOR</h2>
-                    <div class="SketchBx">
-                        <img src="">
-                    </div>
-                    <div class="SketchBx">
-                        <img src="">
-                    </div>
-                    <div class="SketchBx">
-                        <img src="">
-                    </div>
-                    <div class="SketchBx">
-                        <img src="">
-                    </div>
-                </div>
-                <div class="BlockSketch">
-                    <h2>PRESETS V1TOWN</h2>
-                    <div class="SketchBx">
-                        <img src="">
-                    </div>
-                    <div class="SketchBx">
-                        <img src="">
-                    </div>
-                    <div class="SketchBx">
-                        <img src="">
-                    </div>
-                    <div class="SketchBx">
-                        <img src="">
-                    </div>
-                </div>-->
-            </div>
+            
             <div class="tab-pane fade" id="Studio">
                 <img src="img/logovstudio.svg" onload="SVGInject(this)">
-                <h4>CURITIBA/BR • AVEIRO/PT</h4>
+                <h4>CURITIBA/BR</h4>
                 <div class="StudioJobs">
                     <div class="BxStudio">
                         <span>IDENTIDADE VISUAL</span>
@@ -377,12 +338,6 @@
                         <span>FOTOGRAFIA</span>
                         <div class="textStudio">
                             Fazemos tanto ensaios pessoais, quanto <br> editoriais para marcas. <br> E nós trabalhamos com a fotografia com o mesmo rigor que criamos visuais, prezando pela criatividade e estética.
-                        </div>
-                    </div>
-                    <div class="BxStudio">
-                        <span>ILUSTRAÇÃO</span>
-                        <div class="textStudio">
-                            Para marcas que procuram peças personalizadas, criação de mascotes, cenas ilustradas e infográficos, temos ilustrações a oferecer!
                         </div>
                     </div>
                     <div class="BxStudio">
@@ -409,7 +364,7 @@
                     <div class="Linkscontato">
                         <h4>PARA ADQUIRIR PRODUTOS:</h4>
                         <a href="https://www.instagram.com/v1town/" target="_blank">@v1town</a>
-                        <a href="https://www.instagram.com/cajuju.arte/" target="_blank">@cajuju.arte</a>
+                        <a href="https://www.instagram.com/pepperitah/" target="_blank">@pepperitah</a>
                     </div>
                 </div>
             </div>
@@ -420,32 +375,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/animation.js"></script>
     
-<!-- <script type="text/javascript">
-    $(document).ready(function () {
-        $('#dataTable').DataTable();
-    });
-    
-    $("#dataTable").dataTable({
-        "ordering": false,
-        "bJQueryUI": true,
-        "oLanguage": {
-            "sProcessing":   "Processando...",
-            "sLengthMenu":   "Mostrar _MENU_ registros",
-            "sZeroRecords":  "Não foram encontrados resultados",
-            "sInfo":         "Mostrando de _START_ até _END_ de _TOTAL_ registros",
-            "sInfoEmpty":    "Mostrando de 0 até 0 de 0 registros",
-            "sInfoFiltered": "",
-            "sInfoPostFix":  "",
-            "sSearch":       "Buscar:",
-            "sUrl":          "",
-            "oPaginate": {
-            "sFirst":    "Primeiro",
-            "sPrevious": "Anterior",
-            "sNext":     "Seguinte",
-            "sLast":     "Último"
-            }
-        }
-    });
-    </script>-->
 </body>
 </html>
