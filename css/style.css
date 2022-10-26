@@ -993,6 +993,7 @@ img, svg {
   margin: 1vw 0 2vw 0;
   color: #3A0000;
 }
+
 #Studio .StudioJobs {
   padding: 1vw;
   display: flex;
@@ -1046,6 +1047,17 @@ img, svg {
   #Studio h4 {
     font-size: 2.5vw;
     margin: 1vw 0 3vw 0;
+  }
+  #Studio .linksStudio {
+    height: 5vw;
+    margin: 2vw 0 2vw 0;
+  }
+  #Studio .linksStudio a {
+    font-size: 2.5vw;
+  }
+  #Studio .linksStudio svg {
+    fill: #FF6D00;
+    width: 20%;
   }
   #Studio .linksStudio {
     height: 5vw;
@@ -1543,25 +1555,18 @@ img, svg {
 .light-theme #Studio h4 {
   color: #EDFAC9;
 }
-.light-theme #Studio .linksStudio a {
-  color: #EDFAC9;
+
+.light-theme #Studio h5 {
+  color: #FFFFFF;
 }
-.light-theme #Studio .linksStudio a:hover {
-  color: #2EB4FF;
-}
-.light-theme #Studio .linksStudio svg {
-  fill: #2EB4FF;
-}
+
 .light-theme #Studio .StudioJobs .BxStudio span {
-  color: #2EB4FF;
-  border-right: 0.1vw solid #EDFAC9;
+  color: #0584FF;
 }
 .light-theme #Studio .StudioJobs .BxStudio .textStudio {
   color: #EDFAC9;
 }
-.light-theme #Studio h5 {
-  color: #EDFAC9;
-}
+
 .light-theme #contato .BxContato .Linkscontato a {
   background-color: #2EB4FF;
 }
