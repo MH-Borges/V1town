@@ -25,6 +25,9 @@
             align-items: center;
             margin-left: auto;
             width: 30%;
+            svg{
+                fill: $Black;
+            }
         }
     }
     .About{
@@ -139,6 +142,9 @@
                 display: flex; 
                 width: 28%;
                 transition: 0.5s ease-in-out;
+                svg{
+                    fill: $Black;
+                }
             }
         }
         .About{

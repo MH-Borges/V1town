@@ -103,8 +103,11 @@ $("#typeBabaca").on("click", () => {
     }
 });
 
-$("#slider").on("input",function () {
+$("#sliderAbelha").on("input",function () {
     $('#testAbelha').css("font-size", $(this).val() + "px");
+});
+$("#sliderBabaca").on("input",function () {
+    $('#testBacaca').css("font-size", $(this).val() + "px");
 });
 
 $(document).ready(()=> {

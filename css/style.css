@@ -139,6 +139,9 @@ img, svg {
   margin-left: auto;
   width: 30%;
 }
+.Menu .BxLogos .LongLogo svg {
+  fill: #3A0000;
+}
 .Menu .About {
   margin: 7vw 0 0 0;
   color: #3A0000;
@@ -257,6 +260,9 @@ img, svg {
     display: flex;
     width: 28%;
     transition: 0.5s ease-in-out;
+  }
+  .Menu .BxLogos .LongLogo svg {
+    fill: #3A0000;
   }
   .Menu .About {
     margin: 7vw 0 0 0;
@@ -993,7 +999,31 @@ img, svg {
   margin: 1vw 0 2vw 0;
   color: #3A0000;
 }
-
+#Studio .linksStudio {
+  font-family: "Redonda";
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  height: 5vw;
+  margin: 1vw 0 2vw 0;
+}
+#Studio .linksStudio a {
+  font-size: 1.2vw;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3A0000;
+  text-decoration: none;
+}
+#Studio .linksStudio a:hover {
+  color: #FF4500;
+}
+#Studio .linksStudio svg {
+  fill: #FF4500;
+  width: 27%;
+}
 #Studio .StudioJobs {
   padding: 1vw;
   display: flex;
@@ -1047,17 +1077,6 @@ img, svg {
   #Studio h4 {
     font-size: 2.5vw;
     margin: 1vw 0 3vw 0;
-  }
-  #Studio .linksStudio {
-    height: 5vw;
-    margin: 2vw 0 2vw 0;
-  }
-  #Studio .linksStudio a {
-    font-size: 2.5vw;
-  }
-  #Studio .linksStudio svg {
-    fill: #FF6D00;
-    width: 20%;
   }
   #Studio .linksStudio {
     height: 5vw;
@@ -1555,18 +1574,25 @@ img, svg {
 .light-theme #Studio h4 {
   color: #EDFAC9;
 }
-
-.light-theme #Studio h5 {
-  color: #FFFFFF;
+.light-theme #Studio .linksStudio a {
+  color: #EDFAC9;
 }
-
+.light-theme #Studio .linksStudio a:hover {
+  color: #2EB4FF;
+}
+.light-theme #Studio .linksStudio svg {
+  fill: #2EB4FF;
+}
 .light-theme #Studio .StudioJobs .BxStudio span {
-  color: #0584FF;
+  color: #2EB4FF;
+  border-right: 0.1vw solid #EDFAC9;
 }
 .light-theme #Studio .StudioJobs .BxStudio .textStudio {
   color: #EDFAC9;
 }
-
+.light-theme #Studio h5 {
+  color: #EDFAC9;
+}
 .light-theme #contato .BxContato .Linkscontato a {
   background-color: #2EB4FF;
 }
