@@ -1,0 +1,12 @@
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html
+
+# Um ano para arquivos de imagem
+<filesMatch ".(jpg|jpeg|png|gif|ico|svg|otf|woff2)$">
+Header set Cache-Control "max-age=31536000, public"
+</filesMatch>
+
+# Um mês para css e js
+<filesMatch ".(css|js|php)$">
+Header set Cache-Control "max-age=3000000, public"
+</filesMatch>
